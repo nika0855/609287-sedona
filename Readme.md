@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/21/user/609287).
-* Наставник: `Неизвестно`.
+* Студент: [Андрей](https://up.htmlacademy.ru/htmlcss/21/user/609287).
+* Наставник: Андрей Грачев (https://htmlacademy.ru/profile/id252055)`.
 
 ---
 
