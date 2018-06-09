@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="style.css">
     <script src="js/" defer></script>
   </head>
   <body>
 <div class="wrapper">
  <header class="main_header">
-
    <nav class="main_navigation">
    <a  class="main_logo">
    <img src="img/logo.png" width="138" height="70" alt="Логотип">
@@ -23,8 +22,12 @@
    </nav>
  </header>
 
- <main>
-   <div><img src=" " alt="WELCOM"></div>
+ <main class="container">
+   <h1 class="visually-hidden">Отели в городе Седона</h1>
+
+<div class="banner_block">
+   <div class="banner"></div>
+</div>
     <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
 
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -34,7 +37,7 @@
     <h3>настоящий городок</h3>
         <span class="elem_num">№1</span>
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="img/city.png" width="800" height="256" alt="городок">
+        <img src="img/city.png" width="800" height="256" alt="городок Седона">
     </div>
     <div class="housing_elem">
     <h3>жильё</h3>
@@ -74,12 +77,29 @@
   <div class="search_form">
     <b>заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <form class="appointment_form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+       <p>
+        <label>Дата заезда:</label>
+        <input type="date" class="calend" name="date">
+        </p>
+        <p>
+        <label >Дата выезда:</label>
+        <input type="date" class="calend" name="date">
+        </p>
+        <p>
+          <label for="appointment_namber">Взрослые:</label>
+          <input type="number" min="1" max="10" step="1" id="appointment_namber">
+          <label for="child_namber">Дети:</label>
+          <input type="number" min="0" max="10" step="1" id="child_namber">
+        </p>
+      </fieldset>
+      <button class="button">Найти</button>
 
+    </form>
     <button type="button">поиск гостиницы в седоне</button>
   </div>
-  <div class="map">
-    <img src="img/map.png" width="1280" height="747" alt="карта">
-  </div>
+
  </main>
 
  <footer>
@@ -99,6 +119,38 @@
       </div>
   </div>
  </footer>
+
+ <section class="modal moda_login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="logi_form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually_hidden" for="use_login">Логин</label>
+          <input class="login_icon-user" id="use_login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visuall_hidden" for="use_password">Пароль</label>
+          <input class="logi_icon-password" id="use_password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="logi_passwor_info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visuall_hidden">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="moda_close" type="button">Закрыть</button>
+    </section>
+<section class="modal modal_map">
+   <h2 class="visually_hidden">Мы на большой карте</h2>
+    <p>
+    <img src="img/map.png" width="1280" height="747" alt="карта">
+  </p>
+
+</section>
  </div>
   </body>
 </html>
