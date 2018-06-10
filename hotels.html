@@ -19,7 +19,7 @@
      <li><a>гостиницы</a></li>
    </ul>
    </nav>
-    <hr>
+
  </header>
  <main>
  <form action="/echo" method="post" oninput="daysoutput.value=dayscount.value" >
@@ -49,37 +49,32 @@
      <input type="range" id="dayscount" name="dayscount" min="1" max="31" step="1">
      <input type="range" id="dayssumm" name="dayssumm" min="1" max="3000" step="100">
      </p>
-ищу решение
-    </div>
-    <div class="length_day out">
-      <output name="daysoutput"></output>
 
     </div>
-    <div>
-      <output name="daysout"></output>
-    </div>
+
      <div class="buttons">
         <input type="submit" value="показать">
       </div>
     </form>
-    <hr>
+
     <h3>найдено:3</h3>
      <div class="soft">
        <p>сортировка:</p>
        <ul>
-           <li class="soft_item_price">по цене</li>
-           <li class="soft_item_type">по типу</li>
-           <li class="soft_item_rating">по рейтингу</li>
-       </ul>      
+           <li class="soft_item_price"><a href="#">по цене</a></li>
+           <li class="soft_item_type"><a href="#">по типу</a></li>
+           <li class="soft_item_rating"><a href="#">по рейтингу</a></li>
+
+       </ul>
      </div>
  <ul>
      <li class="icon_dir"><span ></span></li>
      <li class="icon_dir_up"><span ></span></li>
  </ul>
-     
-     
 
-     <h1 class="visually-hidden">гостиница Amara Resort & Spa </h1>
+
+
+
  <section class="hotel">
  <img src="img/hotel_amara.png" width="135" height="90" alt="отель">
      <h3>Amara Resort & Spa</h3>
@@ -96,9 +91,9 @@
    <span class="rating4"></span>
 
      <span>рейтинг:8,5</span>
-     <hr>
+
  </section>
-  <h1 class="visually-hidden">мотель Desert Quail Inn </h1>
+
  <section class="motel">
  <img src="img/motel_desert.png" width="135" height="90" alt="отель">
      <h3>Desert Quail Inn</h3>
@@ -116,7 +111,7 @@
      <span>рейтинг:8,9</span>
      <hr>
  </section>
- <h1 class="visually-hidden"> апартаменты Villas at Poco Diablo </h1>
+
   <section class="apartment">
  <img src="img/apartment_villas.png" width="135" height="90" alt="отель">
      <h3>Villas at Poco Diablo</h3>
