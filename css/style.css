@@ -1,35 +1,125 @@
-/* сброс стилей браузера */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1.2;
-}
-ol {
-	padding-left: 1.4em;
-	list-style: decimal;
-}
-ul {
-	padding-left: 1.4em;
-	list-style: square;
-}
 
-/* конец кода сброса стилей браузера */
-body{
-  max-width:1200px;
+html,body{
+  margin: 0;
+  padding: 0;
 }
-.banner{
-  height: 529px;
-  background:url(img/welcome.png) no-repeat 200px 100px ,
-    url(img/background-foto.jpg) no-repeat;
-  overflow: hidden;
+body{
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  min-width: 768px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+   background: url("../img/background-fon.jpg" );
+
+   background-color: lavender;
+    background-position: top center;
+  background-repeat: no-repeat;
+}
+a{
+  text-decoration: none;
+}
+/*//кнопки*/
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+ .button_blue{
+  background-color: #81b3d2;
+}
+.button_blue:hover{
+  background-color:#669ec0;
+}
+.button_blue:active{
+  background-color:#5496bd;
+}
+ .button_brown{
+ background-color: #766357;
+}
+.button_brown:hover{
+  background-color:#604e43;
+}
+.button_brown:active{
+  background-color:#503e33;
+}
+/*//навигация*/
+.main_navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+.site_navigation{
+  list-style: none;
+}
+.site_navigation a{
+  color: #000000;
+}
+.site_navigation a:hover{
+  background-color: #81b3d2;
+}
+.site_navigation a:focus{
+  background-color: #b2b2b2;
+}
+h2{
+  text-align: center;
+}
+/*//форма*/
+.information_item h2{
+ font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+.information_item p{
+  text-align: center;
+  font-size: 14px;
+  color:#696969;
+}
+fieldset{
+  border-color: #ffffff;
+}
+.appointment_form{
+  width: 560px;
+  height: 396px;
+  background-color: #f2f2f2;
+
+}
+.appointment_item {
+  color: #000000;
+}
+.appointment_item input{
+  font: inherit;
+  background-color: #f2f2f2;
+}
+.appointment_item input:hover{
+  background-color:#ebebeb;
+}
+.appointment_item input:focus{
+  background-color: #ffffff;
+border-color: #e5e5e5;
+}
+/*//подвал*/
+.main_footer{
+
+color: #000000;
+background-color: #fdfdfd;
+
+}
+.academy_logo::after{
+ content:url(../img/site_logo.png );
+  display: inline-block;
+  margin: 5px;
+}
+.footer_social a{
+  color: black;
 }

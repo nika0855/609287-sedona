@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/" defer></script>
   </head>
@@ -23,21 +25,24 @@
  </header>
 
  <main class="container">
-   <h1 class="visually-hidden">Отели в городе Седона</h1>
+    <h1 class="visually-hidden">Отели в городе Седона</h1>
 
-<div class="banner_block">
-   <div class="banner"></div>
-</div>
-    <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+
+   <div class="information">
+    <div class="information_item">
+
+    <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
 
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </div>
   <section class="service">
     <div class="service_wrap">
    <div class="city_elem">
     <h3>настоящий городок</h3>
         <span class="elem_num">№1</span>
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="img/city.png" width="800" height="256" alt="городок Седона">
+        <img src="img/big_city.jpg" width="800" height="256" alt="городок Седона">
     </div>
     <div class="housing_elem">
     <h3>жильё</h3>
@@ -50,7 +55,7 @@
     <div class="souvenirs_elem">
     <h3>сувениры</h3>
          <p>Не только китайского, но и местного производства!</p>
-         <img src="img/bridge.png" width="800" height="256" alt="мост дьявола">
+         <img src="img/big_bridge.jpg" width="800" height="256" alt="мост дьявола">
     </div>
     <div class="bridge_elem">
     <h3>там есть мост дьявола</h3>
@@ -79,15 +84,15 @@
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
     <form class="appointment_form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
-       <p>
-        <label>Дата заезда:</label>
-        <input type="date" class="calend" name="date">
+       <p class="appointment_item">
+        <label for="arrival_date">Дата заезда:</label>
+        <input id="arrival_date" type="date" class="calend" name="date">
         </p>
-        <p>
-        <label >Дата выезда:</label>
-        <input type="date" class="calend" name="date">
+        <p class="appointment_item">
+        <label for="departure_date" >Дата выезда:</label>
+        <input id="departure_date" type="date" class="calend" name="date">
         </p>
-        <p>
+        <p class="appointment_item">
           <label for="appointment_namber">Взрослые:</label>
           <input type="number" min="1" max="10" step="1" id="appointment_namber">
           <label for="child_namber">Дети:</label>
@@ -102,7 +107,7 @@
 
  </main>
 
- <footer>
+ <footer class="main_footer">
   <div class="page_footer">
 
         <a href="#">#visitsedona</a>
