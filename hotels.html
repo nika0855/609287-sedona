@@ -7,7 +7,7 @@
  <link href="css/normalize.css" rel="stylesheet">
  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner_page">
 <div class="wrapper">
    <header class="main_header">
    <nav class="main_navigation">
@@ -23,8 +23,10 @@
    </nav>
 
  </header>
- <main>
- <form action="/echo" method="post" oninput="daysoutput.value=dayscount.value" >
+ <main class="container">
+ <section class="filters">
+ <h2 class="visually-hidden">Фильтр услуг</h2>
+ <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="daysoutput.value=dayscount.value" >
     <fieldset>
     <legend>инфраструктура:</legend>
     <ul class="info_list">
@@ -58,7 +60,7 @@
         <input type="submit" value="показать">
       </div>
     </form>
-
+</section>
     <h3>найдено:3</h3>
      <div class="soft">
        <p>сортировка:</p>
@@ -78,7 +80,7 @@
 
 
  <section class="hotel">
- <img src="img/hotel_amara.png" width="135" height="90" alt="отель">
+ <img src="img/hotel-amara.jpg" width="135" height="90" alt="отель">
      <h3>Amara Resort & Spa</h3>
       <div class="hotel_description">
         <div class="hotel_info">
@@ -97,7 +99,7 @@
  </section>
 
  <section class="motel">
- <img src="img/motel_desert.png" width="135" height="90" alt="отель">
+ <img src="img/motel-desert.jpg" width="135" height="90" alt="отель">
      <h3>Desert Quail Inn</h3>
        <div class="motel_description">
         <div class="motel_info">
@@ -115,11 +117,11 @@
  </section>
 
   <section class="apartment">
- <img src="img/apartment_villas.png" width="135" height="90" alt="отель">
+ <img src="img/apartment_villas.jpg" width="135" height="90" alt="апартаменты">
      <h3>Villas at Poco Diablo</h3>
         <div class="apartment_description">
         <div class="apartment_info">
-           <p class="apartment_text">мотель</p>
+           <p class="apartment_text">апартаменты</p>
            <a href="#" class="button button_blue">подробнее</a>
         </div>
         <div class="apartment_booking">
