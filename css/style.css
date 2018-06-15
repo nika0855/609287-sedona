@@ -93,7 +93,7 @@ h2{
   color:#696969;
 }
 fieldset{
-  border-color: #ffffff;
+  border:none;
 }
 .appointment_form{
   width: 560px;
@@ -125,8 +125,54 @@ border-color: #e5e5e5;
 }
 .filter ul{
   list-style: none;
+   font-size: 14px;
    line-height:21px;
   color: #ffffff;
+}
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.filter_checkboxes{
+  margin: 0 auto;
+  padding: 10p[ 20px;
+  width: 300px;
+  border: 1px solid #ffffff;
+  list-style-type: none;
+  border-radius: 10px;]
+}
+.filter_checkboxes li{
+  margin: 25px 0;
+}
+.filter_checkbox + label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.filter_checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+.filter_checkbox:checked + label::before {
+  width: 27px;
+  background-image: url("../img/checkbox-on.svg");
 }
 /*//подвал*/
 .main_footer{

@@ -25,22 +25,40 @@
  </header>
  <main class="container">
  <section class="filters">
- <h2 class="visually-hidden">Фильтр услуг</h2>
+ <h2 class="visually_hidden">Фильтр услуг</h2>
  <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="daysoutput.value=dayscount.value" >
     <fieldset>
     <legend>инфраструктура:</legend>
-    <ul class="info_list">
-      <li><input type="checkbox"><label>бассейн</label></li>
-      <li><input type="checkbox"><label>парковка</label></li>
-      <li><input type="checkbox"><label>wi-fi</label></li>
+    <ul class="filter_checkboxes">
+      <li>
+        <input class="filter_checkbox visually_hidden" type="checkbox" name="pool" id="pool" checked>
+        <label for="pool">бассейн</label>
+      </li>
+      <li>
+        <input class="filter_checkbox visually_hidden" type="checkbox" name="parking" id="parking">
+        <label for="parking">парковка</label>
+      </li>
+      <li>
+        <input class="filter_checkbox visually_hidden" type="checkbox" name="wifi" id="wifi">
+        <label for="wifi">wi-fi</label>
+      </li>
     </ul>
    </fieldset>
    <fieldset>
     <legend >тип жилья:</legend>
-    <ul class="info_list">
-      <li><input type="checkbox"><label>гостиница</label></li>
-      <li><input type="checkbox"><label>мотель</label></li>
-      <li><input type="checkbox"><label>апартаменты</label></li>
+    <ul class="filter_checkboxes">
+      <li>
+        <input class="filter_checkbox visually_hidden" type="checkbox" name="hotel" id="hotel" checked>
+        <label for="hotel">гостиница</label>
+      </li>
+      <li>
+        <input class="filter_checkbox visually_hidden" type="checkbox" name="motel" id="motel" checked>
+        <label for="motel">мотель</label>
+      </li>
+      <li>
+        <input class="filter_checkbox visually_hidden" type="checkbox" name="apartments" id="apartments" checked>
+        <label for="apartments">апартаменты</label>
+      </li>
     </ul>
    </fieldset>
     <div class="length_day">
