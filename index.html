@@ -13,18 +13,25 @@
  <header class="main_header">
    <nav class="main_navigation">
    <a  class="main_logo">
-   <img src="img/logo.png" width="138" height="70" alt="Логотип">
+<img src="img/logo.png" width="138" height="70" alt="Логотип">
    </a>
-   <ul class="site_navigation">
-     <li><a href="info.html">информация</a></li>
-     <li><a href="#">фото и видео</a></li>
-     <li><a href="#">карта штата</a></li>
-     <li><a href="hotels.html">гостиницы</a></li>
-   </ul>
+   <div class="main_navigation_wrapper">
+     <div class="container">
+       <ul class="site_navigation">
+         <li><a href="info.html">информация</a></li>
+         <li><a href="#">фото и видео</a></li>
+         <li><a href="#">карта штата</a></li>
+         <li><a href="hotels.html">гостиницы</a></li>
+       </ul>
+      </div>
+   </div>
    </nav>
  </header>
 
  <main class="container">
+   <div class="page_main_intro">
+   <img class="page_main_logo" src="img/welcome-sedona.png" width="458" height="352" alt="добро пожалувать в Седону">
+   </div>
     <h1 class="visually-hidden">Отели в городе Седона</h1>
 
 
@@ -41,47 +48,50 @@
    <div class="city_elem">
     <h3>настоящий городок</h3>
         <span class="elem_num">№1</span>
-        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="img/big_city.jpg" width="800" height="256" alt="городок Седона">
-    </div>
+        <p class="characters">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      </div>
+        <img class="city" src="img/city.jpg" width="800" height="256" alt="городок Седона">
+
     <div class="housing_elem">
     <h3>жильё</h3>
-        <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <p class="characters">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     </div>
     <div class="food_elem">
     <h3>еда</h3>
-         <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+         <p class="characters">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
     </div>
     <div class="souvenirs_elem">
     <h3>сувениры</h3>
-         <p>Не только китайского, но и местного производства!</p>
-         <img src="img/big_bridge.jpg" width="800" height="256" alt="мост дьявола">
-    </div>
+         <p class="characters">Не только китайского, но и местного производства!</p>
+      </div>
+         <img class="bridge" src="img/bridge.jpg" width="800" height="256" alt="мост дьявола">
+
     <div class="bridge_elem">
     <h3>там есть мост дьявола</h3>
          <span class="elem_num">№2</span>
-         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+         <p class="characters">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
     </div>
     <div class="area_elem">
     <h3>небольшая площадь</h3>
          <span class="elem_num">№3</span>
-         <p>Все достопримечательности находятся очень близко</p>
+         <p class="characters">Все достопримечательности находятся очень близко</p>
     </div>
     <div class="road_elem">
     <h3>красивая дорога</h3>
          <span class="elem_num">№4</span>
-         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+         <p class="characters">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
     <div class="tourists_elem">
     <h3>мало туристов</h3>
          <span class="elem_num">№5</span>
-         <p>Большинство едет в гранд каньон и толпится там</p>
+         <p class="characters">Большинство едет в гранд каньон и толпится там</p>
     </div>
     </div>
   </section>
-  <div class="search_form">
-    <b>заинтересовались?</b>
-      <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  <section class="search_form">
+    <b class="search_hotel_title">заинтересовались?</b>
+      <p class="search_hotel_text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="search_hotel_botton" type="button">поиск гостиницы в седоне</button>
     <form class="appointment_form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
        <p class="appointment_item">
@@ -99,11 +109,11 @@
           <input type="number" min="0" max="10" step="1" id="child_namber">
         </p>
       </fieldset>
-      <button class="button">Найти</button>
+      <button type="submit" class="button_submit">Найти</button>
 
     </form>
-    <button type="button">поиск гостиницы в седоне</button>
-  </div>
+
+  </section>
 
  </main>
 
@@ -111,6 +121,7 @@
   <div class="page_footer">
 
         <a href="#">#visitsedona</a>
+    </div>
 
    <div class="footer_social">
       <ul>
@@ -120,9 +131,10 @@
      </ul>
         </div>
       <div class="footer_copyright">
-        <span class="academy_logo">website by </span><a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+        <span class="academy_logo">website by </span>
+        <a class="website" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </div>
-  </div>
+
  </footer>
 
 <!--

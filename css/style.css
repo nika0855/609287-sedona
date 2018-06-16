@@ -6,22 +6,30 @@ html,body{
 body{
   margin: 0 auto;
   padding: 0;
-  max-width: 1200px;
-  min-width: 768px;
+  min-width: 1200px;
+
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
-   background: url("../img/background-fon.jpg" );
+  background-color: #f2f2f2;
 
-   background-color: #f2f2f2;
-    background-position: top center;
-  background-repeat: no-repeat;
+}
+.page_main_intro{
+  position: relative;
+  min-height: 432;
+  padding-top: 76px;
+  width: 1200px;
+  height: 536px;
+  background-color: #6e95bd;
+  background-image: url(../img/background-fon2.jpg);
+  background-size: cover;
+  background-position: 50% 21%;
 }
 .inner_page{
-color: #000000;
+  color: #000000;
   background-color: #6e95bb;
   background-image: url("../img/hotel-background_03.jpg");
   background-position: top center;
@@ -29,6 +37,12 @@ color: #000000;
 }
 a{
   text-decoration: none;
+}
+.characters,
+.elem_num{
+   text-align: center;
+  font-size: 14px;
+  color:#696969;
 }
 /*//кнопки*/
 .button {
@@ -176,10 +190,11 @@ input[type="radio"].visually_hidden{
 }
 /*//подвал*/
 .main_footer{
-
-color: #000000;
-background-color: #fdfdfd;
-
+  color: #000000;
+  background-color: #fdfdfd;
+}
+.page_footer a{
+  color:#000000;
 }
 .academy_logo::after{
  content:"";
@@ -188,7 +203,143 @@ background-color: #fdfdfd;
   background-image: url(../img/logo-htmlacademy.svg);
   display: inline-block;
   margin: 5px;
+  cursor: pointer;
 }
+
 .footer_social a{
   color: black;
 }
+.footer_social{
+  text-align: center;
+}
+.footer_social ul{
+  list-style: none;
+}
+.footer_copyright{
+  text-align: center;
+}
+/*стрелки*/
+.icon_dir::after{
+  content: "";
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-up-dir.svg);
+  display: inline-block;
+  color: #f2f2f2;
+}
+/*сеточные стили*/
+
+.container{
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main_header{
+
+  min-height: 65px;
+  background-color: rgba(0,100,66,0.3);
+  opacity: 0.3;
+}
+.main_logo{
+display: block;
+  width: 138px;
+  height: 70px;
+/*background-image: url(../img/logo.png);*/
+  margin: 0 531px;
+}
+.page_main_intro::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 90%;
+  width: 1200px;
+  height: 57px;
+  background-image: url(../img/trangle.png);
+  background-repeat: no-repeat;
+}
+.page_main_logo{
+  position: relative;
+  margin-top: -50px;
+  margin-left: 400px;
+}
+.main_navigation_wrapper{
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 70px;
+  background-color: aquamarine;
+}
+.main_navigation_wrapper .container{
+  display: flex;
+  justify-content: space-between;
+}
+.main_navigation{
+  display: flex;
+  flex-direction: column;
+/*  align-items: center;*/
+  min-height: 60px;
+  background-color: transparent;
+}
+.site_navigation {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+  min-height: 56px;
+  list-style: none;
+}
+.service_wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ flex-wrap: wrap;
+}
+.city_elem{
+  width: 33%;
+  height: 256px;
+  background-color: #81b3d2;
+}
+.city{
+  width: 66%;
+  height: 256px;
+}
+.housing_elem{
+  width: 33%;
+  height: 330px;
+  background-color: aliceblue;
+}
+.food_elem{
+  width: 33%;
+  height: 330px;
+  background-color: aliceblue;
+}
+.souvenirs_elem{
+    width: 33%;
+  height: 330px;
+  background-color: aliceblue;
+}
+.bridge{
+  width: 66%;
+  height: 256px;
+}
+.bridge_elem{
+   width: 33%;
+  height: 256px;
+  background-color: #81b3d2;
+}
+.area_elem{
+  width: 33%;
+  height: 256px;
+  background-color: #eeeeee;
+}
+.road_elem{
+  width: 33%;
+  height: 256px;
+  background-color: #eeeeee;
+}
+.tourists_elem{
+  width: 33%;
+  height: 256px;
+  background-color: #eeeeee;
+}
+
