@@ -4,18 +4,26 @@ html,body{
   padding: 0;
 }
 body{
-  margin: 0 auto;
+  margin: 0 ;
   padding: 0;
-  min-width: 1200px;
+  min-width: 768px;
 
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
 
+}
+.wrapper{
+  position: relative;
+  margin: 0 auto;
+  min-width: 768px;
+  max-width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
 }
 .page_main_intro{
   position: relative;
@@ -27,13 +35,6 @@ body{
   background-image: url(../img/background-fon2.jpg);
   background-size: cover;
   background-position: 50% 21%;
-}
-.inner_page{
-  color: #000000;
-  background-color: #6e95bb;
-  background-image: url("../img/hotel-background_03.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 a{
   text-decoration: none;
@@ -73,13 +74,13 @@ a{
   background-color:#503e33;
 }
 /*//навигация*/
-.main_navigation {
+/*.main_navigation {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
 
   background-color: #ffffff;
-}
+}*/
 .site_navigation{
   list-style: none;
 }
@@ -92,9 +93,9 @@ a{
 .site_navigation a:focus{
   background-color: #b2b2b2;
 }
-h2{
+/*h2{
   text-align: center;
-}
+}*/
 /*//форма*/
 .information_item h2{
  font-size: 21px;
@@ -129,6 +130,34 @@ fieldset{
   background-color: #ffffff;
 border-color: #e5e5e5;
 }
+/*стили формы*/
+.filter{
+  padding: 27px 6% 6px;
+  color: #ffffff;
+  background-color: #6e95bb;
+  background-image: url(../img/hotel-background_03.jpg);
+  background-position: 50% 16%;
+  background-repeat: no-repeat;
+}
+.filter{
+  display: flex;
+  flex-direction: row;
+}
+.form_block_left{
+  width: 48%;
+  display: flex;
+}
+.filter_flex{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  flex-grow: 1;
+}
+.filter_legend{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
 .filter fieldset{
   border: none;
 }
@@ -158,12 +187,9 @@ input[type="radio"].visually_hidden{
   overflow: hidden;
 }
 .filter_checkboxes{
-  margin: 0 auto;
-  padding: 10p[ 20px;
-  width: 300px;
-  border: 1px solid #ffffff;
-  list-style-type: none;
-  border-radius: 10px;]
+  margin: 0 ;
+  padding-left: 0;
+  list-style: none;
 }
 .filter_checkboxes li{
   margin: 25px 0;
@@ -187,6 +213,11 @@ input[type="radio"].visually_hidden{
 .filter_checkbox:checked + label::before {
   width: 27px;
   background-image: url("../img/checkbox-on.svg");
+}
+/*range стили*/
+.payment_day{
+    margin-left: auto;
+    width: 30%;
 }
 /*//подвал*/
 .main_footer{
@@ -229,24 +260,20 @@ input[type="radio"].visually_hidden{
 }
 /*сеточные стили*/
 
-.container{
-  width: 1056px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.main_header{
-
-  min-height: 65px;
-  background-color: rgba(0,100,66,0.3);
-  opacity: 0.3;
-}
-.main_logo{
-display: block;
+.logo{
   width: 138px;
   height: 70px;
-/*background-image: url(../img/logo.png);*/
-  margin: 0 531px;
+}
+.main_logo{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo_image{
+  max-width: 100%;
+  height: auto;
 }
 .page_main_intro::after{
   content: "";
@@ -263,30 +290,43 @@ display: block;
   margin-top: -50px;
   margin-left: 400px;
 }
-.main_navigation_wrapper{
-  width: 100%;
-  min-height: 60px;
-  margin-bottom: 70px;
-  background-color: aquamarine;
-}
-.main_navigation_wrapper .container{
-  display: flex;
-  justify-content: space-between;
-}
+
 .main_navigation{
-  display: flex;
-  flex-direction: column;
-/*  align-items: center;*/
-  min-height: 60px;
-  background-color: transparent;
+ position: relative;
+  z-index: 10;
+  font-weight: 700;
 }
-.site_navigation {
-  width: 100px;
+.main_nav_list {
   margin: 0;
-  padding: 0;
-  background-color: bisque;
-  min-height: 56px;
+  padding-left: 0;
+ display: flex;
+  flex-wrap: wrap;
   list-style: none;
+}
+.main_nav_item:nth-child(4n+1){
+  margin-left: 6%;
+}
+.main_nav_item:nth-child(4n+3){
+  margin-left: auto;
+}
+.main_nav_item:nth-child(4n+3),
+.main_nav_item:nth-child(4n+4){
+  text-align:right;
+}
+.main_nav_item:last-child, .main-nav_item:nth-child(4n+4) {
+    margin-right: 6%;
+  }
+  .main_nav_item:nth-child(4n+3), .main-nav_item:nth-child(4n+4) {
+    text-align: right;
+}
+.main_nav_item{
+  padding-top: 14px;
+  padding-bottom: 16px;
+  flex-basis: 20%;
+}
+.main_nav_link{
+  line-height: 26px;
+  color: #000000;
 }
 .service_wrap{
   display: flex;
@@ -342,4 +382,107 @@ display: block;
   height: 256px;
   background-color: #eeeeee;
 }
-
+/*найдено*/
+.choice_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:23px 6% 21px;
+  line-height: 26px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.choice_search{
+  width: 134px;
+}
+.choice_result{
+  font-size: 21px;
+  font-weight: 700;
+}
+.soft_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+  padding-right: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.soft_text{
+  font-size: 12px;
+  line-height: 18px;
+}
+.catalog_list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 10px;
+}
+/*стили section*/
+.hotel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 6% 29px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotel img{
+  margin: 0;
+  padding: 0;
+  width: 134px;
+}
+.hotel_description{
+  display: flex;
+}
+.hotel_description_wpap{
+  flex-grow: 1;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+.hotel_image{
+  display: block;
+  width: 135px;
+  height: 90px;
+}
+.hotel_name{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 21px;
+    line-height: 26px;
+}
+.hotel_link{
+  color: #000000;
+}
+.hotel_link a{
+  text-decoration: none;
+}
+.hotel_rating{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-start;
+  padding-top: 4px;
+  width: 110px;
+}
+.stars_four{
+  width: 89px;
+}
+.hotel_stars{
+  max-width: 110px;
+  height: 17px;
+  background-image: url(../img/star.svg);
+ background-repeat: space;
+}
+.rating_text{
+  margin-top: 47px;
+    margin-bottom: 0;
+    padding: 3px 13px;
+    background-color:#f2f2f2;
+}
+.stars_three{
+  width: 65px;
+}
+.stars_two{
+  width: 41px;
+}
