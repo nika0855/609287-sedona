@@ -29,10 +29,10 @@ body{
   position: relative;
   min-height: 432;
   padding-top: 76px;
-  width: 1200px;
+  min-width: 768px;
   height: 536px;
   background-color: #6e95bd;
-  background-image: url(../img/background-fon2.jpg);
+  background-image: url(../img/background-foto.jpg);
   background-size: cover;
   background-position: 50% 21%;
 }
@@ -135,7 +135,7 @@ border-color: #e5e5e5;
   padding: 27px 6% 6px;
   color: #ffffff;
   background-color: #6e95bb;
-  background-image: url(../img/hotel-background_03.jpg);
+  background-image: url(../img/hotel-background.jpg);
   background-position: 50% 16%;
   background-repeat: no-repeat;
 }
@@ -279,10 +279,10 @@ input[type="radio"].visually_hidden{
   content: "";
   position: absolute;
   left: 0;
-  top: 90%;
+  top: 90.7%;
   width: 1200px;
   height: 57px;
-  background-image: url(../img/trangle.png);
+  background-image: url(../img/triangle.png);
   background-repeat: no-repeat;
 }
 .page_main_logo{
@@ -335,50 +335,50 @@ input[type="radio"].visually_hidden{
  flex-wrap: wrap;
 }
 .city_elem{
-  width: 33%;
+  flex:1 1 400px;
   height: 256px;
   background-color: #81b3d2;
 }
 .city{
-  width: 66%;
+  flex:3;
   height: 256px;
 }
 .housing_elem{
-  width: 33%;
+  flex:1 1 400px;
   height: 330px;
   background-color: aliceblue;
 }
 .food_elem{
-  width: 33%;
+  flex:1 1 400px;
   height: 330px;
   background-color: aliceblue;
 }
 .souvenirs_elem{
-    width: 33%;
+    flex:1 1 400px;
   height: 330px;
   background-color: aliceblue;
 }
 .bridge{
-  width: 66%;
+  flex: 3;
   height: 256px;
 }
 .bridge_elem{
-   width: 33%;
+   flex:1 1 400px;
   height: 256px;
   background-color: #81b3d2;
 }
 .area_elem{
-  width: 33%;
+  flex:1 1 400px;
   height: 256px;
   background-color: #eeeeee;
 }
 .road_elem{
-  width: 33%;
+  flex:1 1 400px;
   height: 256px;
   background-color: #eeeeee;
 }
 .tourists_elem{
-  width: 33%;
+  flex:1 1 400px;
   height: 256px;
   background-color: #eeeeee;
 }
