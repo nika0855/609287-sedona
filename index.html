@@ -28,81 +28,93 @@
    <div class="page_main_intro">
    <img class="page_main_logo" src="img/welcome-sedona.png" width="458" height="352" alt="добро пожалувать в Седону">
    </div>
-    <h1 class="visually-hidden">Отели в городе Седона</h1>
+
 
 
    <div class="information">
-    <div class="information_item">
-
-    <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
+    <h1 class="visually-hidden">Отели в городе Седона</h1>
+    <b class="information_item">Седона — небольшой городок в Аризоне,заслуживающий большего!</b>
+        <p class="information_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
   <section class="service">
     <div class="service_wrap">
    <div class="city_elem">
-    <h3>настоящий городок</h3>
-        <span class="elem_num">№1</span>
-        <p class="characters">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+    <h3 class="heading_elem">настоящий городок</h3>
+        <span class="item_num">- №1 -</span>
+        <p class="characters_text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
         <img class="city" src="img/city.jpg" width="800" height="256" alt="городок Седона">
 
-    <div class="housing_elem">
-    <h3>жильё</h3>
+    <div class="housing_elem paragraph_text">
+    <h3 class="title_elem">жильё</h3>
         <p class="characters">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     </div>
-    <div class="food_elem">
-    <h3>еда</h3>
+    <div class="food_elem paragraph_text">
+    <h3 class="title_elem">еда</h3>
          <p class="characters">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
     </div>
-    <div class="souvenirs_elem">
-    <h3>сувениры</h3>
+    <div class="souvenirs_elem paragraph_text">
+    <h3 class="title_elem">сувениры</h3>
          <p class="characters">Не только китайского, но и местного производства!</p>
       </div>
          <img class="bridge" src="img/bridge.jpg" width="800" height="256" alt="мост дьявола">
 
     <div class="bridge_elem">
-    <h3>там есть мост дьявола</h3>
-         <span class="elem_num">№2</span>
-         <p class="characters">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    <h3 class="heading_elem">там есть мост дьявола</h3>
+         <span class="item_num">- №2 -</span>
+         <p class="characters_text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
     </div>
-    <div class="area_elem">
-    <h3>небольшая площадь</h3>
-         <span class="elem_num">№3</span>
-         <p class="characters">Все достопримечательности находятся очень близко</p>
+    <div class="fragment_descriptions">
+    <h3 class="heading_elem">небольшая площадь</h3>
+         <p class="elem_num">- №3 -</p>
+         <p class="characters">Все достопримечательносpаходятся очень близко</p>
     </div>
-    <div class="road_elem">
-    <h3>красивая дорога</h3>
-         <span class="elem_num">№4</span>
+    <div class="fragment_descriptions">
+    <h3 class="heading_elem">красивая дорога</h3>
+         <p class="elem_num">- №4 -</p>
          <p class="characters">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
-    <div class="tourists_elem">
-    <h3>мало туристов</h3>
-         <span class="elem_num">№5</span>
+    <div class="fragment_descriptions">
+    <h3 class="heading_elem">мало туристов</h3>
+         <p class="elem_num">- №5 -</p>
          <p class="characters">Большинство едет в гранд каньон и толпится там</p>
     </div>
     </div>
   </section>
-  <section class="search_form">
+  <section class="search_hotel">
     <b class="search_hotel_title">заинтересовались?</b>
-      <p class="search_hotel_text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="search_hotel_botton" type="button">поиск гостиницы в седоне</button>
+      <p class="search_hotel_text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="button search_hotel_botton" type="button">поиск гостиницы в седоне</button>
+     <!--  форма поиска гостиницы -->
     <form class="appointment_form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
        <p class="appointment_item">
         <label for="arrival_date">Дата заезда:</label>
-        <input id="arrival_date" type="date" class="calend" name="date">
+        <input id="arrival_date" type="text" class="calend" name="date" placeholder="24 апреля 2017" required>
+        <button class="searh_caledar" type="button" aria-label="Календарь">
+           <svg class="searh_caledar_icon" width="21" height="22">
+             <img src="img/calendar.svg" alt="calendar">
+           </svg>
+        </button>
         </p>
         <p class="appointment_item">
         <label for="departure_date" >Дата выезда:</label>
-        <input id="departure_date" type="date" class="calend" name="date">
+        <input id="departure_date" type="text" class="calend" name="date" placeholder="4 июля 2017" required>
+         <button class="searh_caledar" type="button" aria-label="Календарь">
+           <svg class="searh_caledar_icon" width="21" height="22">
+             <img src="img/calendar.svg" alt="calendar">
+           </svg>
+        </button>
         </p>
         <p class="appointment_item">
           <label for="appointment_namber">Взрослые:</label>
-          <input type="number" min="1" max="10" step="1" id="appointment_namber">
+          <button class="searh_button adults_button_minus" type="button" aria-label="уменьшить"></button>
+          <input type="text" id="appointment_namber" placeholder="2" required>
+          <button class="searh_button adults_button_plus" type="button" aria-label="увеличить"></button>
           <label for="child_namber">Дети:</label>
-          <input type="number" min="0" max="10" step="1" id="child_namber">
+          <button class="searh_button child_button_minus" type="button" aria-label="уменьшить"></button>
+          <input type="text" id="child_namber" placeholder="0" required>
+          <button class="searh_button child_button_plus" type="button" aria-label="уменьшить"></button>
         </p>
       </fieldset>
       <button type="submit" class="button_submit">Найти</button>
