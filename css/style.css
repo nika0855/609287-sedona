@@ -7,11 +7,11 @@ body{
   margin: 0 ;
   padding: 0;
   min-width: 768px;
-
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  /*max-width: 1200px;*/
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -111,9 +111,9 @@ a{
   text-align: center;
 }
 .information_item {
+  display: block;
  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
+  font-weight: 700;
 }
 .information_text{
   display: block;
@@ -126,12 +126,62 @@ fieldset{
   border:none;
 }
 .appointment_form{
-  width: 560px;
+  width: 568px;
   height: 396px;
   background-color: #f2f2f2;
 
 }
+.form_search{
+  /*visibility: hidden;*/
+    padding: 56px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #fff;
+    -webkit-box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+    box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+}
+ .form_search_label{
+   display: block;
+   width: 113px;
+ }
+ .form_calend{
+  box-sizing: border-box;
+  width: 306px;
+  height: 38px;
+  padding: 0 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+    background-color: #f2f2f2;
+ }
+ .searh_caledar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+ }
+ .button_submit_search{
+  margin-top: 54px;
+  padding: 16px 10px;
+  width: 100%;
+  background-color: #81b3d2;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 26px;
+  font-weight: 700;
+ }
 .appointment_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 29px;
+  font-weight: 700;
+  line-height: 26px;
   color: #000000;
 }
 .appointment_item input{
@@ -239,10 +289,16 @@ input[type="radio"].visually_hidden{
   color: #000000;
   background-color: #fdfdfd;
 }
+.page_footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
 .page_footer a{
   color:#000000;
 }
-.academy_logo::after{
+/*.academy_logo::after{
  content:"";
   width: 109px;
   height: 37px;
@@ -250,8 +306,13 @@ input[type="radio"].visually_hidden{
   display: inline-block;
   margin: 5px;
   cursor: pointer;
-}
+}*/
+.acdemy_logo{
+  display: block;
+  width: 113px;
+  height: 39px;
 
+}
 .footer_social a{
   color: black;
 }
@@ -261,9 +322,9 @@ input[type="radio"].visually_hidden{
 .footer_social ul{
   list-style: none;
 }
-.footer_copyright{
+/*.footer_copyright{
   text-align: center;
-}
+}*/
 /*стрелки*/
 .icon_dir::after{
   content: "";
@@ -616,3 +677,58 @@ text-align: center;
     left: 50%;
     background-color:#a9a9a9;
 }*/
+/*body{
+   background-image: url(../img/sedona-index-1200.jpg);
+   background-size: 1200px auto;
+  background-repeat: no-repeat;
+  z-index: 15;
+  opacity: 0.5;
+  position: relative;
+  left:0;
+}*/
+.social_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 50px;
+  background-color: #81b3d2;
+}
+.footer_social ul{
+   display: flex;
+   width: 150px;
+   list-style: none;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 0;
+   margin: 0 auto;
+}
+.social_btn:hover{
+  background-color:#669ec0;
+}
+.social_btn:focus,
+.social_btn:active{
+  background-color:#5496bd;
+}
+.page_footer_label{
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer_copyright {
+  display: flex;
+  align-items: center;
+
+}
+.academy_logo{
+
+}
+.copyright_logo{
+  display: block;
+  width: 115px;
+  height: 41px;
+  margin-left: 8px;
+}
+#Layer_1:hover {
+ background-color: red;
+}
