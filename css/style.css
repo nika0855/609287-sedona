@@ -126,6 +126,7 @@ fieldset{
   border:none;
 }
 .appointment_form{
+
   width: 568px;
   height: 396px;
   background-color: #f2f2f2;
@@ -140,6 +141,7 @@ fieldset{
     background-color: #fff;
     -webkit-box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
     box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+    z-index: 5;
 }
  .form_search_label{
    display: block;
@@ -194,6 +196,11 @@ fieldset{
 .appointment_item input:focus{
   background-color: #ffffff;
 border-color: #e5e5e5;
+}
+.map_image{
+  z-index: 1;
+  height: 747px;
+  overflow: hidden;
 }
 /*стили формы*/
 .filter{
@@ -406,6 +413,10 @@ input[type="radio"].visually_hidden{
   flex-direction: row;
   justify-content: space-between;
  flex-wrap: wrap;
+}
+.separate_wrap{
+  display: flex;
+  flex-wrap: wrap;
 }
 .city_elem{
   flex:1 1 400px;
@@ -667,6 +678,7 @@ text-align: center;
    margin-top: 48px;
    padding: 30px 10px;
    width: 100%;
+   z-index: 2;
    background-color:#766357;
 }
 /*.searh_button::after,
