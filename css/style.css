@@ -45,17 +45,9 @@ a{
   line-height: 21px;
   color:#696969;
 }
-.elem_num{}
-/*//кнопки*/
-/*.button {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
 
-  border: none;
-}*/
+/*//кнопки*/
+
 .hotel_button{
   padding: 3px 16px;
   font-size: 14px;
@@ -66,6 +58,7 @@ a{
 }
 .button_blue:hover{
   background-color:#669ebf;
+  transition: all ease 0.5s;
 }
 .button_blue:active{
   background-color:#5496bd;
@@ -76,6 +69,7 @@ a{
 }
 .button_brown:hover{
   background-color:#604e43;
+  transition: all ease 0.5s;
 }
 .button_brown:active{
   background-color:#503e33;
@@ -145,14 +139,17 @@ fieldset{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-align: left;
-    background-color: #fff;
+    background-color: #ffffff;
     -webkit-box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
     box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
     z-index: 5;
 }
  .form_search_label{
    display: block;
-   width: 113px;
+   width: 112px;
+ }
+ .form_label_child{
+  width: 65px;
  }
  .form_calend{
   box-sizing: border-box;
@@ -173,8 +170,16 @@ fieldset{
   background-color: #f2f2f2;
   cursor: pointer;
  }
+ .searh_caledar:hover path{
+  fill: #000000;
+  transition: all ease 0.5s;
+ }
+ .searh_caledar:active path{
+  fill: #81B2D0;
+  transition: all ease 0.5s;
+ }
  .button_submit_search{
-  margin-top: 54px;
+  margin-top: 24px;
   padding: 16px 10px;
   width: 100%;
   background-color: #81b3d2;
@@ -183,7 +188,32 @@ fieldset{
   color: #ffffff;
   line-height: 26px;
   font-weight: 700;
+  cursor: pointer;
  }
+ .button_submit_search:hover{
+  background-color: #669EBF;
+ }
+ .button_submit_search:active{
+  background-color: #5596BE;
+  color: rgba(255,255,255,.3);
+ }
+
+ .appointment_form input[type="text"]:not(.big_child) {
+border: none;
+background-color: #f2f2f2;
+color: rgba(255,255,255,1);
+font-size: 14px;
+box-shadow: inset 0 0 10px rgba(255,255,255,.75);
+}
+.big_child{
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
 .appointment_item {
   display: flex;
   justify-content: space-between;
@@ -193,16 +223,77 @@ fieldset{
   line-height: 26px;
   color: #000000;
 }
-.appointment_item input{
+.form_number_people{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 226px;
+}
+.subform .big_child{
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+.searh_button{
+  position: relative;
+    display: block;
+    border: 0;
+    width: 38px;
+    height: 38px;
+    font: inherit;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.searh_button::before,
+.searh_button::after {
+  content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #a9a9a9;
+}
+.searh_button:hover::after,
+.searh_button:hover::before{
+  background-color: #000000;
+}
+.adults_button_minus::before{
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 3px;
+}
+.adults_button_plus::before{
+  transform: translate(-50%, -50%);
+}
+.adults_button_plus::after,
+.adults_button_plus::before{
+    width: 11px;
+    height: 3px;
+}
+.adults_button_plus::after{
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.appointment_item input[type="text"]{
   font: inherit;
   background-color: #f2f2f2;
+  color: #0e0e0e;
 }
-.appointment_item input:hover{
+.appointment_item input[type="text"]:hover{
   background-color:#ebebeb;
+  color: #0e0e0e;
+  cursor: pointer;
+  transition:all ease 0.5s;
 }
-.appointment_item input:focus{
+.appointment_item input[type="text"]:focus{
   background-color: #ffffff;
 border-color: #e5e5e5;
+ color: #000000;
+  cursor: pointer;
+  transition:all ease 0.5s;
 }
 .map_image{
   z-index: 1;
@@ -370,6 +461,7 @@ background: rgba(255, 255, 255, 0.3);
  border-radius: 50%;
  background: #ababab;
  border: 8px solid #ffffff;
+ cursor: pointer;
 }
 .range_toggle:hover{
   background: #1c4f80;
@@ -412,33 +504,14 @@ background: rgba(255, 255, 255, 0.3);
 .page_footer a{
   color:#000000;
 }
-/*.academy_logo::after{
- content:"";
-  width: 109px;
-  height: 37px;
-  background-image: url(../img/logo-htmlacademy.svg);
-  display: inline-block;
-  margin: 5px;
-  cursor: pointer;
-}*/
+
 .acdemy_logo{
   display: block;
   width: 113px;
   height: 39px;
 
 }
-/*.footer_social a{
-  color: black;
-}
-.footer_social{
-  text-align: center;
-}
-.footer_social ul{
-  list-style: none;
-}*/
-/*.footer_copyright{
-  text-align: center;
-}*/
+
 /*стрелки*/
 .icon_dir::after{
   content: "";
@@ -520,6 +593,7 @@ background: rgba(255, 255, 255, 0.3);
 }
 .main_nav_link:hover{
   color: #80b3d2;
+  transition: all ease 0.5s;
 }
 .main_nav_link:active{
   color: #cacaca;
@@ -683,6 +757,7 @@ text-align: center;
 }
 .soft_link:hover{
   color:#83b4d4;
+  transition: all ease 0.5s;
 }
 .soft_link:active{
   color: #424242;
@@ -701,6 +776,7 @@ text-align: center;
 }
 .icon_link:hover path{
   fill: #000000;
+  transition: all ease 0.5s;
 }
 
 .icon_link:active path{
@@ -708,6 +784,7 @@ text-align: center;
 }
 .icon_down_link:hover path{
   fill: #000000;
+  transition: all ease 0.5s;
 }
 .icon_down_link:active path{
   fill: #82b3d3;
@@ -763,6 +840,7 @@ text-align: center;
 }
 .hotel_link:hover{
   color: #81b3d2;
+  transition: all ease 0.5s;
 }
 .hotel_link:active{
   color: rgba(0,0,0,.5);
@@ -838,6 +916,7 @@ text-align: center;
   display: block;
     border: 0;
     font: inherit;
+    font-size: 14px;
     font-weight: 700;
     color: #ffffff;
     word-wrap: break-word;
@@ -848,28 +927,19 @@ text-align: center;
 .search_hotel_botton{
    position: relative;
    margin-top: 48px;
-   padding: 30px 10px;
+   padding: 31px 10px;
    width: 100%;
+   font-size: 21px;
    z-index: 2;
    background-color:#766357;
 }
-/*.searh_button::after,
-.searh_button::before{
-  content:"";
-   position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color:#a9a9a9;
-}*/
-/*body{
-   background-image: url(../img/sedona-index-1200.jpg);
-   background-size: 1200px auto;
-  background-repeat: no-repeat;
-  z-index: 15;
-  opacity: 0.5;
-  position: relative;
-  left:0;
-}*/
+.search_hotel_botton:hover{
+  background-color: #604E44;
+}
+.search_hotel_botton:active{
+  color:rgb(147,137,133);
+  background-color: #503E32;
+}
 .social_btn{
   display: flex;
   align-items: center;
@@ -881,6 +951,7 @@ text-align: center;
 
 .social_btn:hover{
   background-color:#669ec0;
+  transition: all ease 0.5s;
 }
 .social_btn:focus,
 .social_btn:active{
@@ -917,6 +988,7 @@ text-align: center;
 }
 .copyright_logo:hover path{
  fill: #81b3d2;
+ transition: all ease 0.5s;
 }
 .copyright_logo:active path{
   fill: #bcbcbc;
