@@ -34,7 +34,7 @@
    <div class="information">
     <h1 class="visually-hidden">Отели в городе Седона</h1>
     <b class="information_item">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p class="information_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="information_text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </div>
   <section class="service">
     <div class="service_wrap">
@@ -43,35 +43,40 @@
        <h3 class="heading_elem">настоящий городок</h3>
            <span class="item_num">- №1 -</span>
            <p class="characters_text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-         </div>
-           <img class="city" src="img/city.jpg" width="800" height="256" alt="городок Седона">
+    </div>
+        <div class="image_wrap">
+            <img class="city" src="img/city2.jpg" width="800" height="400" alt="городок Седона">
+        </div>
    </div>
 
-   <div class="separate_wrap">
+   <div class="separate_wrap separate_wrapper">
     <div class="housing_elem paragraph_text">
        <h3 class="title_elem">жильё</h3>
-           <p class="characters">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+           <p class="characters housing_elem_text">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
        </div>
        <div class="food_elem paragraph_text">
        <h3 class="title_elem">еда</h3>
-            <p class="characters">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="characters food_elem_text">всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
        </div>
        <div class="souvenirs_elem paragraph_text">
        <h3 class="title_elem">сувениры</h3>
-            <p class="characters">Не только китайского, но и местного производства!</p>
+            <p class="characters souvenirs_elem_text">Не только китайского, но и местного производства!</p>
          </div>
        </div>
 
-     <div class="separate_wrap">    <img class="bridge" src="img/bridge.jpg" width="800" height="256" alt="мост дьявола">
+    <div class="separate_wrap bridge_wrapper">
+        <div class="image_wrap">
+          <img class="city" src="img/bridge2.jpg" width="800" height="400" alt="мост дьявола">
+        </div>
 
-         <div class="bridge_elem">
+        <div class="bridge_elem">
          <h3 class="heading_elem">там есть<br> мост дьявола</h3>
               <span class="item_num">- №2 -</span>
               <p class="characters_text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-         </div>
-       </div>
+        </div>
+    </div>
 
-   <div class="separate_wrap">
+   <div class="separate_wrap bridge_wrapper">
     <div class="fragment_descriptions">
        <h3 class="heading_elem">небольшая площадь</h3>
             <p class="elem_num">- №3 -</p>
@@ -80,23 +85,24 @@
        <div class="fragment_descriptions">
        <h3 class="heading_elem">красивая дорога</h3>
             <p class="elem_num">- №4 -</p>
-            <p class="characters">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="characters road_elem-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
        </div>
        <div class="fragment_descriptions">
        <h3 class="heading_elem">мало туристов</h3>
             <p class="elem_num">- №5 -</p>
-            <p class="characters">Большинство едет в гранд каньон и толпится там</p>
+            <p class="characters way_elem_text">Большинство едет в гранд каньон и толпится там</p>
        </div>
      </div>
     </div>
   </section>
   <section class="search_hotel">
+    <h2 class="visually_hidden">форма поиска гостиницы в седоне</h2>
     <b class="search_hotel_title">заинтересовались?</b>
       <p class="search_hotel_text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button search_hotel_botton" type="button">поиск гостиницы в седоне</button>
+      <button class="button search_hotel_botton button_link" type="button">поиск гостиницы в седоне</button>
      <!--  форма поиска гостиницы -->
-    <form class="appointment_form form_search" action="https://echo.htmlacademy.ru" method="post">
-      <!-- <fieldset> -->
+    <form class="appointment_form form_search button_link_open" action="https://echo.htmlacademy.ru" method="post">
+
        <div class="appointment_item">
         <label class="form_search_label" for="arrival_date">Дата заезда:</label>
         <input id="arrival_date" type="text" class="form_calend" name="date" placeholder="24 апреля 2017" required>
@@ -129,13 +135,13 @@
               <button class="searh_button adults_button_plus" type="button" aria-label="уменьшить"></button>
            </div>
         </div>
-      <!-- </fieldset> -->
+
       <button type="submit" class="button_submit_search">Найти</button>
 
     </form>
 
   </section>
-  <section class="modal modal_map">
+  <section class="map modal_map">
    <h2 class="visually_hidden">Мы на большой карте</h2>
 
     <img class="map_image" src="img/big_map.png" width="1200" height="593" alt="карта">
@@ -145,7 +151,7 @@
 
  </main>
 
- <footer>
+ <footer class="footer_index">
   <div class="page_footer">
 
        <div class="footer_copyright">
@@ -154,7 +160,8 @@
 
    <div class=" footer_copyright">
       <ul class="social_link">
-         <li class="social_link_item"> <a class="social_btn" href="https://vk.com/htmlacademy"><span class="visually-hidden">твитер</span> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a></li>
+         <li class="social_link_item"> <a class="social_btn" href="https://vk.com/htmlacademy"><span class="visually-hidden">твитер</span> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>
+         </li>
 
         <li class="social_link_item"> <a class="social_btn" href="https://facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>
 
@@ -198,5 +205,21 @@
 -->
 
  </div>
+ <script>
+    var link = document.querySelector(".button_link");
+    var popur=document.querySelector(".form_search");
+    var close =popur.querySelector(".button_close");
+
+    link.addEventListener("click",function(evt){
+    evt.preventDefault();
+    popur.classList.add("button_link_open");
+    })
+    close.addEventListener("click",function(evt) {
+    evt.preventDefault();
+     // popur.classList.toggle("button_close");
+     popur.classList.replace("button_link_open","button_close");
+
+})
+ </script>
   </body>
 </html>
