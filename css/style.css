@@ -137,7 +137,7 @@ fieldset{
 
 }
 .form_search{
-  display: none;
+  /*display: none;*/
     position: absolute;
     padding: 56px;
     -webkit-box-sizing: border-box;
@@ -190,6 +190,7 @@ fieldset{
   font-size: 21px;
   text-transform: uppercase;
   color: #ffffff;
+  border: 0;
   line-height: 26px;
   font-weight: 700;
   cursor: pointer;
@@ -984,15 +985,6 @@ text-align: center;
     cursor: pointer;
     overflow: visible;
 }
-.button_close{
-  display: none;
-}
-.button_link{
-  display: block;
-}
-.button_link_open{
-    display: block;
-}
 .search_hotel_botton{
    position: relative;
    margin-top: 47px;
@@ -1073,4 +1065,39 @@ text-align: center;
   position: relative;
   overflow: hidden;
 }
+/*.toggler__content{
+  display:none;
+}
+.toggler__content--on{
+  display:block;
+}*/
+/*@keyframes show {
+  0% {
+    transform: scaleY(0) translateY(-60%);
+  }
 
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}*/
+/*.toggler__content--on{
+  display: block;
+  animation: show 0.75s forwards;
+}*/
+
+@keyframes show {
+  0% {
+    transform: scaleY(0) translateY(-60%);
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
+.js-form-close {
+  display: none;
+}
+.js-form-show {
+  display: block;
+  animation: show 0.75s forwards;
+}

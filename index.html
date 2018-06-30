@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
      <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/" defer></script>
+    <script src="js/popap.js" defer></script>
   </head>
   <body>
 <div class="wrapper">
@@ -99,9 +99,9 @@
     <h2 class="visually_hidden">форма поиска гостиницы в седоне</h2>
     <b class="search_hotel_title">заинтересовались?</b>
       <p class="search_hotel_text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button search_hotel_botton button_link" type="button">поиск гостиницы в седоне</button>
+      <button class="button search_hotel_botton <!-- toggler__button -->" type="button" id="bnt_search">поиск гостиницы в седоне</button>
      <!--  форма поиска гостиницы -->
-    <form class="appointment_form form_search button_link_open" action="https://echo.htmlacademy.ru" method="post">
+    <form class="appointment_form form_search  <!-- button_close toggler__content -->" action="https://echo.htmlacademy.ru" method="post">
 
        <div class="appointment_item">
         <label class="form_search_label" for="arrival_date">Дата заезда:</label>
@@ -205,21 +205,5 @@
 -->
 
  </div>
- <script>
-    var link = document.querySelector(".button_link");
-    var popur=document.querySelector(".form_search");
-    var close =popur.querySelector(".button_close");
-
-    link.addEventListener("click",function(evt){
-    evt.preventDefault();
-    popur.classList.add("button_link_open");
-    })
-    close.addEventListener("click",function(evt) {
-    evt.preventDefault();
-     // popur.classList.toggle("button_close");
-     popur.classList.replace("button_link_open","button_close");
-
-})
- </script>
   </body>
 </html>
