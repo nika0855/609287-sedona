@@ -43,7 +43,7 @@ a{
 .characters,
 .elem_num{
   font-family:"PT Sans","Arial",sans-serif;
-   text-align: center;
+  text-align: center;
   font-size: 14px;
   line-height: 21px;
   color:#696969;
@@ -95,12 +95,12 @@ a{
 .visually-hidden{
   position: absolute;
   overflow: hidden;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   width: 1px;
-   height: 1px;
-   clip-path: inset(100%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
@@ -116,7 +116,7 @@ a{
 }
 .information_item {
   display: block;
- font-size: 21px;
+  font-size: 21px;
   font-weight: 700;
 }
 .information_text{
@@ -138,33 +138,33 @@ fieldset{
 }
 .form_search{
   /*display: none;*/
-    position: absolute;
-    padding: 56px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: left;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
-    box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
-    z-index: 5;
+  position: absolute;
+  padding: 56px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+  box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+  z-index: 5;
 }
- .form_search_label{
+.form_search_label{
    display: block;
    width: 112px;
  }
- .form_label_child{
+.form_label_child{
   width: 65px;
  }
- .form_calend{
+.form_calend{
   box-sizing: border-box;
   width: 306px;
   height: 38px;
   padding: 0 10px;
   font-size: 14px;
   text-transform: uppercase;
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
  }
- .searh_caledar{
+.searh_caledar{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,15 +174,15 @@ fieldset{
   background-color: #f2f2f2;
   cursor: pointer;
  }
- .searh_caledar:hover path{
+.searh_caledar:hover path{
   fill: #000000;
   transition: all ease 0.5s;
  }
- .searh_caledar:active path{
+.searh_caledar:active path{
   fill: #81B2D0;
   transition: all ease 0.5s;
  }
- .button_submit_search{
+.button_submit_search{
   margin-top: 24px;
   padding: 16px 10px;
   width: 100%;
@@ -195,20 +195,20 @@ fieldset{
   font-weight: 700;
   cursor: pointer;
  }
- .button_submit_search:hover{
+.button_submit_search:hover{
   background-color: #669EBF;
  }
- .button_submit_search:active{
+.button_submit_search:active{
   background-color: #5596BE;
   color: rgba(255,255,255,.3);
  }
 
- .appointment_form input[type="text"]:not(.big_child) {
-border: none;
-background-color: #f2f2f2;
-color: rgba(255,255,255,1);
-font-size: 14px;
-box-shadow: inset 0 0 10px rgba(255,255,255,.75);
+.appointment_form input[type="text"]:not(.big_child) {
+  border: none;
+  background-color: #f2f2f2;
+  color: rgba(255,255,255,1);
+  font-size: 14px;
+  box-shadow: inset 0 0 10px rgba(255,255,255,.75);
 }
 .big_child{
   width: 38px;
@@ -245,21 +245,21 @@ box-shadow: inset 0 0 10px rgba(255,255,255,.75);
 }
 .searh_button{
   position: relative;
-    display: block;
-    border: 0;
-    width: 38px;
-    height: 38px;
-    font: inherit;
-    background-color: #f2f2f2;
-    cursor: pointer;
+  display: block;
+  border: 0;
+  width: 38px;
+  height: 38px;
+  font: inherit;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 .searh_button::before,
 .searh_button::after {
   content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #a9a9a9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #a9a9a9;
 }
 .searh_button:hover::after,
 .searh_button:hover::before{
@@ -275,8 +275,8 @@ box-shadow: inset 0 0 10px rgba(255,255,255,.75);
 }
 .adults_button_plus::after,
 .adults_button_plus::before{
-    width: 11px;
-    height: 3px;
+  width: 11px;
+  height: 3px;
 }
 .adults_button_plus::after{
   transform: translate(-50%, -50%) rotate(90deg);
@@ -295,8 +295,8 @@ box-shadow: inset 0 0 10px rgba(255,255,255,.75);
 }
 .appointment_item input[type="text"]:focus{
   background-color: #ffffff;
-border-color: #e5e5e5;
- color: #000000;
+  border-color: #e5e5e5;
+  color: #000000;
   cursor: pointer;
   transition:all ease 0.5s;
 }
@@ -344,15 +344,15 @@ border-color: #e5e5e5;
   border: none;
 }
 .filter legend{
-   font-size: 16px;
+  font-size: 16px;
   line-height:21px;
   color: #ffffff;
 }
 .filter ul{
   width: 239px;
   list-style: none;
-   font-size: 14px;
-   line-height:21px;
+  font-size: 14px;
+  line-height:21px;
   color: #ffffff;
 }
 .visually_hidden:not(:focus):not(:active),
@@ -399,8 +399,8 @@ input[type="radio"].visually_hidden{
 }
 /*range стили*/
 .payment_day{
-    margin-left: auto;
-    width: 30%;
+   margin-left: auto;
+   width: 30%;
 }
 .cost_day{
   margin: 0;
@@ -454,7 +454,7 @@ input[type="radio"].visually_hidden{
   margin-bottom: 32px;
 }
 .slider_range .slider_line_range{
-height: 2px;
+  height: 2px;
 
 background: rgba(255, 255, 255, 0.3);
 }
@@ -467,23 +467,23 @@ background: rgba(255, 255, 255, 0.3);
 .range_toggle{
   position: absolute;
   top: -9px;
- width: 4px;
- height: 4px;
- border-radius: 50%;
- background: #ababab;
- border: 8px solid #ffffff;
- cursor: pointer;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  cursor: pointer;
 }
 .range_toggle:hover{
   background: #1c4f80;
   transform: scale(1.2);
 }
 .slider_btn{
-   display: block;
+  display: block;
   margin-left:27%;
   padding: 6px 33px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -572,14 +572,14 @@ background: rgba(255, 255, 255, 0.3);
   margin:0 auto;
 }
 .main_navigation{
- position: relative;
+  position: relative;
   z-index: 10;
   font-weight: 700;
 }
 .main_nav_list {
   margin: 0;
   padding-left: 0;
- display: flex;
+  display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
@@ -596,7 +596,7 @@ background: rgba(255, 255, 255, 0.3);
 .main_nav_item:last-child, .main-nav_item:nth-child(4n+4) {
     margin-right: 6%;
   }
-  .main_nav_item:nth-child(4n+3), .main-nav_item:nth-child(4n+4) {
+.main_nav_item:nth-child(4n+3), .main-nav_item:nth-child(4n+4) {
     text-align: right;
 }
 .main_nav_item{
@@ -620,12 +620,12 @@ background: rgba(255, 255, 255, 0.3);
 .main_present_link{
   color: #776456;
 }
-.service_wrap{
+/*.service_wrap{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- flex-wrap: wrap;
-}
+  flex-wrap: wrap;
+}*/
 .separate_wrapper{
   height: 330px;
 }
@@ -668,28 +668,30 @@ background: rgba(255, 255, 255, 0.3);
   margin-bottom: 24px;
   font-size: 21px;
   font-weight: 700;
-text-align: center;
+  text-align: center;
 }
 .image_wrap{
-    position: relative;
-    overflow: hidden;
-    width: 66.666667%;
-    max-height: 256px;
+  position: relative;
+  overflow: hidden;
+  width: 66.666667%;
+  min-height: 256px;
 }
 .city{
- position: relative;
- top: 54%;
- left: 0;
- max-width: 100%;
- height: auto;
+  position: absolute;
+  top: 54%;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+-webkit-transform: translateY(-54%);
+ -ms-transform: translateY(-54%);
  transform: translateY(-54%);
 }
 .paragraph_text{
   width: 33.333333%;
   position: relative;
- box-sizing: border-box;
-    padding: 161px 4% 68px;
-    text-align: center;
+  box-sizing: border-box;
+  padding: 161px 4% 68px;
+  text-align: center;
 }
 .housing_elem_text{
   width: 84.5%;
@@ -708,8 +710,8 @@ text-align: center;
   margin-left: 5%;
 }
 .road_elem-text{
- width: 95.4%;
- margin-left: 1.9%;
+  width: 95.4%;
+  margin-left: 1.9%;
 }
 .housing_elem::before{
   content: "";
@@ -745,8 +747,8 @@ text-align: center;
 }
 
 .bridge_elem{
-   width: 33.333333%;
-   color: #ffffff;
+  width: 33.333333%;
+  color: #ffffff;
   box-sizing: border-box;
   padding: 47px 4% 24px;
   text-align:center;
@@ -755,7 +757,7 @@ text-align: center;
 .fragment_descriptions{
   width: 33.333333%;
   box-sizing: border-box;
-    padding: 47px 5% 45px;
+  padding: 47px 5% 45px;
   background-color: #eeeeee;
 }
 .road_elem{
@@ -883,10 +885,10 @@ text-align: center;
   height: 90px;
 }
 .hotel_name{
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 21px;
-    line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 21px;
+  line-height: 26px;
 }
 .hotel_text{
   margin-left: -1px;
@@ -921,13 +923,13 @@ text-align: center;
   max-width: 110px;
   height: 17px;
   background-image: url(../img/star.svg);
- background-repeat: space;
+  background-repeat: space;
 }
 .rating_text{
   margin-top: 47px;
-    margin-bottom: 0;
-    padding: 3px 13px;
-    background-color:#f2f2f2;
+  margin-bottom: 0;
+  padding: 3px 13px;
+  background-color:#f2f2f2;
 }
 .stars_three{
   width: 65px;
@@ -936,37 +938,37 @@ text-align: center;
   width: 41px;
 }
 .search_hotel{
-   position: relative;
-    z-index: 20;
-    margin: 0 auto;
-    padding-top: 30px;
-    width: 568px;
-    text-align: center;
+  position: relative;
+  z-index: 20;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 568px;
+  text-align: center;
 }
 .search_hotel_title{
    display: block;
-    margin-top: 21px;
-    margin-bottom: 23px;
-    font-size: 30px;
-    font-weight: 700;
-    color: #000;
-    line-height: 36px;
+   margin-top: 21px;
+   margin-bottom: 23px;
+   font-size: 30px;
+   font-weight: 700;
+   color: #000;
+   line-height: 36px;
 }
 .search_hotel_text{
-    font-family: "PT Sans","Arial",sans-serif;
+   font-family: "PT Sans","Arial",sans-serif;
    line-height: 24px;
-    color: #7d7d7d;
+   color: #7d7d7d;
 }
 /*форма поиска гостиницы*/
 .searh_button{
    position: relative;
    display: block;
-  border: 0;
+   border: 0;
    width: 38px;
-  height: 38px;
+   height: 38px;
    font: inherit;
-  background-color: #f2f2f2;
-  cursor: pointer;
+   background-color: #f2f2f2;
+   cursor: pointer;
 }
 .adults_button_minus::before{
   transform: translate(-50%,-50%);
@@ -975,15 +977,15 @@ text-align: center;
 }
 .button{
   display: block;
-    border: 0;
-    font: inherit;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-    word-wrap: break-word;
-    text-transform: inherit;
-    cursor: pointer;
-    overflow: visible;
+  border: 0;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  word-wrap: break-word;
+  text-transform: inherit;
+  cursor: pointer;
+  overflow: visible;
 }
 .search_hotel_botton{
    position: relative;
@@ -1021,7 +1023,7 @@ text-align: center;
   color: #88B7D2;
 }
 .page_footer_label{
-  font-size: 21px;
+  font-size: 26px;
   font-weight: 700;
   color: #000000;
 }
@@ -1030,6 +1032,9 @@ text-align: center;
   justify-content: center;
   align-items: center;
   width: 33.33333%;
+}
+.academy_logo{
+  line-height: 26px;
 }
 .social_link{
   display: flex;
@@ -1068,12 +1073,15 @@ text-align: center;
   top:50%;
   left: 50%;
   width: 1200px;
- height: 593px;
- margin-left: -600px;
- border: 1px solid white;
+  height: 593px;
+  margin-left: -600px;
+  border: 1px solid white;
 }
 .modal_map iframe {
   position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
   z-index: 2;
 
   border: none;
@@ -1145,10 +1153,10 @@ text-align: center;
     transform: scaleY(1) translateY(0);
   }
 }
-.js-form-close {
+.js_form_close {
   display: none;
 }
-.js-form-show {
+.js_form_show {
   display: block;
   animation: show 0.75s forwards;
 }
