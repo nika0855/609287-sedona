@@ -50,7 +50,18 @@ a{
 }
 
 /*кнопки*/
-
+.button{
+  display: block;
+  border: 0;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  word-wrap: break-word;
+  text-transform: inherit;
+  cursor: pointer;
+  overflow: visible;
+}
 .hotel_button{
   padding: 3px 16px;
   font-size: 14px;
@@ -980,18 +991,7 @@ background: rgba(255, 255, 255, 0.3);
   width: 12px;
   height: 3px;
 }
-.button{
-  display: block;
-  border: 0;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-  word-wrap: break-word;
-  text-transform: inherit;
-  cursor: pointer;
-  overflow: visible;
-}
+
 .search_hotel_botton{
    position: relative;
    margin-top: 47px;
