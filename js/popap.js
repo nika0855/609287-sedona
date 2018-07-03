@@ -10,12 +10,12 @@
 // Если включен JS, то скрываем форму
 
    if (popur) {
-  popur.classList.add("js-form-close");
+  popur.classList.add("js_form_close");
               }
 if (bntSearch) {
   // Клик произошёл по кнопке поиска гостиницы
   bntSearch.addEventListener("click", function(event) {
-    popur.classList.toggle("js-form-close");
-    popur.classList.toggle("js-form-show");
+    popur.classList.toggle("js_form_close");
+    popur.classList.toggle("js_form_show");
   });
 }

@@ -310,6 +310,11 @@ fieldset{
   transform: translateX(-50%);
 
 }
+.map_interactive{
+  width: 1200px;
+  height: 593px;
+  z-index: 10;
+}
 /*стили формы*/
 .filter{
   padding: 27px 6% 6px;
@@ -1061,7 +1066,7 @@ background: rgba(255, 255, 255, 0.3);
   fill: #bcbcbc;
 }
 .map{
-  display: block;
+  /*display: block;*/
   position: relative;
   height: 593px;
   overflow: hidden;
@@ -1069,14 +1074,14 @@ background: rgba(255, 255, 255, 0.3);
 .modal_show{
   display: block;
 }
-.modal_map{
+/*.modal_map{
   top:50%;
   left: 50%;
   width: 1200px;
   height: 593px;
   margin-left: -600px;
   border: 1px solid white;
-}
+}*/
 .modal_map iframe {
   position: relative;
   width: 100%;
