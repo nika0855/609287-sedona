@@ -7,7 +7,6 @@ body{
   margin: 0 ;
   padding: 0;
   min-width: 768px;
-  /*max-width: 1200px;*/
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -23,6 +22,7 @@ body{
   min-width: 768px;
   max-width: 1200px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
   box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
 }
 .page_main_intro{
@@ -49,7 +49,7 @@ a{
   color:#696969;
 }
 
-/*кнопки*/
+
 .button{
   display: block;
   border: 0;
@@ -72,6 +72,8 @@ a{
 }
 .button_blue:hover{
   background-color:#669ebf;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 .button_blue:active{
@@ -83,6 +85,8 @@ a{
 }
 .button_brown:hover{
   background-color:#604e43;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 .button_brown:active{
@@ -111,11 +115,12 @@ a{
   padding: 0;
   width: 1px;
   height: 1px;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
-/*форма*/
+
 .information{
   display: block;
   margin: 0 auto;
@@ -167,6 +172,7 @@ fieldset{
   width: 65px;
  }
 .form_calend{
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 306px;
   height: 38px;
@@ -176,21 +182,31 @@ fieldset{
   background-color: #f2f2f2;
  }
 .searh_caledar{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border: 2px solid transparent;
-  width: 38px;
+  width: 41px;
   height: 38px;
   background-color: #f2f2f2;
   cursor: pointer;
  }
 .searh_caledar:hover path{
   fill: #000000;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
  }
 .searh_caledar:active path{
   fill: #81B2D0;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
  }
 .button_submit_search{
@@ -217,8 +233,8 @@ fieldset{
 .appointment_form input[type="text"]:not(.big_child) {
   border: none;
   background-color: #f2f2f2;
-  color: rgba(255,255,255,1);
   font-size: 14px;
+  -webkit-box-shadow: inset 0 0 10px rgba(255,255,255,.75);
   box-shadow: inset 0 0 10px rgba(255,255,255,.75);
 }
 .big_child{
@@ -227,12 +243,19 @@ fieldset{
   font-size: 14px;
   text-align: center;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 0;
 }
 .appointment_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 29px;
   font-weight: 700;
@@ -240,8 +263,14 @@ fieldset{
   color: #000000;
 }
 .form_number_people{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 226px;
 }
@@ -251,6 +280,7 @@ fieldset{
   font-size: 14px;
   text-align: center;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 0;
 }
@@ -277,11 +307,15 @@ fieldset{
   background-color: #000000;
 }
 .adults_button_minus::before{
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 12px;
   height: 3px;
 }
 .adults_button_plus::before{
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .adults_button_plus::after,
@@ -290,6 +324,8 @@ fieldset{
   height: 3px;
 }
 .adults_button_plus::after{
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
@@ -302,6 +338,8 @@ fieldset{
   background-color:#ebebeb;
   color: #0e0e0e;
   cursor: pointer;
+  -webkit-transition:all ease 0.5s;
+  -o-transition:all ease 0.5s;
   transition:all ease 0.5s;
 }
 .appointment_item input[type="text"]:focus{
@@ -309,6 +347,8 @@ fieldset{
   border-color: #e5e5e5;
   color: #000000;
   cursor: pointer;
+  -webkit-transition:all ease 0.5s;
+  -o-transition:all ease 0.5s;
   transition:all ease 0.5s;
 }
 .map_image{
@@ -318,6 +358,8 @@ fieldset{
   z-index: 1;
   height: 747px;
   overflow: hidden;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 
 }
@@ -336,19 +378,32 @@ fieldset{
   background-repeat: no-repeat;
 }
 .filter{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .form_block_left{
   width: 48.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .filter_flex{
   margin: 0;
   padding: 0;
   border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 .filter_legend{
@@ -381,6 +436,7 @@ input[type="radio"].visually_hidden{
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -403,6 +459,8 @@ input[type="radio"].visually_hidden{
   position: absolute;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 27px;
   height: 23px;
@@ -413,7 +471,7 @@ input[type="radio"].visually_hidden{
   width: 27px;
   background-image: url("../img/checkbox-on.svg");
 }
-/*range стили*/
+
 .payment_day{
    margin-left: auto;
    width: 30%;
@@ -428,7 +486,10 @@ input[type="radio"].visually_hidden{
   position: relative;
   margin-top: 10px;
   margin-bottom:0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 4px 0;
   font-size: 0;
@@ -443,6 +504,8 @@ input[type="radio"].visually_hidden{
   width: 2px;
   height: 22px;
   background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .number_num label{
@@ -455,6 +518,7 @@ input[type="radio"].visually_hidden{
 }
 
 .number_num input{
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 50px;
   padding-left: 1px;
@@ -492,6 +556,8 @@ background: rgba(255, 255, 255, 0.3);
 }
 .range_toggle:hover{
   background: #1c4f80;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 .slider_btn{
@@ -530,8 +596,13 @@ background: rgba(255, 255, 255, 0.3);
   background-color: rgba(254,254,254,.9);
 }
 .page_footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 120px;
 }
@@ -546,7 +617,7 @@ background: rgba(255, 255, 255, 0.3);
 
 }
 
-/*стрелки*/
+
 .icon_dir::after{
   content: "";
   width: 11px;
@@ -555,7 +626,7 @@ background: rgba(255, 255, 255, 0.3);
   display: inline-block;
   color: #f2f2f2;
 }
-/*сеточные стили*/
+
 
 .logo{
   width: 138px;
@@ -566,6 +637,8 @@ background: rgba(255, 255, 255, 0.3);
   z-index: 5;
   top: 0;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 .logo_image{
@@ -595,7 +668,10 @@ background: rgba(255, 255, 255, 0.3);
 .main_nav_list {
   margin: 0;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
 }
@@ -618,6 +694,7 @@ background: rgba(255, 255, 255, 0.3);
 .main_nav_item{
   padding-top: 14px;
   padding-bottom: 16px;
+  -ms-flex-preferred-size: 20%;
   flex-basis: 20%;
 }
 
@@ -628,6 +705,8 @@ background: rgba(255, 255, 255, 0.3);
 
 .main_nav_link:hover{
   color: #80b3d2;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 .main_nav_link:active{
@@ -636,12 +715,7 @@ background: rgba(255, 255, 255, 0.3);
 .main_present_link{
   color: #776456;
 }
-/*.service_wrap{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}*/
+
 .separate_wrapper{
   height: 330px;
 }
@@ -649,13 +723,17 @@ background: rgba(255, 255, 255, 0.3);
   height: 256px;
 }
 .separate_wrap{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center;
 }
 .city_elem{
   width: 33.333333%;
   color: #ffffff;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 47px 4% 24px;
   text-align:center;
@@ -705,6 +783,7 @@ background: rgba(255, 255, 255, 0.3);
 .paragraph_text{
   width: 33.333333%;
   position: relative;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 161px 4% 68px;
   text-align: center;
@@ -736,6 +815,8 @@ background: rgba(255, 255, 255, 0.3);
   left: 50%;
   width: 75px;
   height: 76px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background-image: url(../img/icon-1.svg);
   background-size: 75px 76px;
@@ -747,6 +828,8 @@ background: rgba(255, 255, 255, 0.3);
   left: 50%;
   width: 74px;
   height: 70px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background-image: url(../img/icon-3.svg);
 }
@@ -757,6 +840,8 @@ background: rgba(255, 255, 255, 0.3);
   left: 50%;
   width: 64px;
   height: 76px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background-image: url(../img/icon-2.svg);
   background-size: 64px 76px;
@@ -765,6 +850,7 @@ background: rgba(255, 255, 255, 0.3);
 .bridge_elem{
   width: 33.333333%;
   color: #ffffff;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 47px 4% 24px;
   text-align:center;
@@ -772,6 +858,7 @@ background: rgba(255, 255, 255, 0.3);
 }
 .fragment_descriptions{
   width: 33.333333%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 47px 5% 45px;
   background-color: #eeeeee;
@@ -782,14 +869,22 @@ background: rgba(255, 255, 255, 0.3);
   background-color: #eeeeee;
 }
 .tourists_elem{
+  -webkit-box-flex:1;
+  -ms-flex:1 1 400px;
   flex:1 1 400px;
   height: 256px;
   background-color: #eeeeee;
 }
-/*найдено*/
+
 .choice_wrap{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding:23px 6% 21px;
   line-height: 26px;
@@ -803,9 +898,16 @@ background: rgba(255, 255, 255, 0.3);
   font-weight: 700;
 }
 .soft_wrap{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   padding-left: 30px;
   padding-right: 10px;
@@ -818,7 +920,10 @@ background: rgba(255, 255, 255, 0.3);
 }
 .catalog_list{
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding-left: 10px;
@@ -835,14 +940,22 @@ background: rgba(255, 255, 255, 0.3);
 }
 .soft_link:hover{
   color:#83b4d4;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 .soft_link:active{
   color: #424242;
 }
 .down_up_searh{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding-left: 0;
@@ -854,6 +967,8 @@ background: rgba(255, 255, 255, 0.3);
 }
 .icon_link:hover path{
   fill: #000000;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 
@@ -862,15 +977,23 @@ background: rgba(255, 255, 255, 0.3);
 }
 .icon_down_link:hover path{
   fill: #000000;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 .icon_down_link:active path{
   fill: #82b3d3;
 }
-/*стили section*/
+
 .hotel{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 25px 6% 29px;
   border-bottom: 1px solid #e5e5e5;
@@ -881,6 +1004,8 @@ background: rgba(255, 255, 255, 0.3);
   width: 134px;
 }
 .hotel_description{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .hotel_info{
@@ -891,9 +1016,11 @@ background: rgba(255, 255, 255, 0.3);
   width: 142px;
 }
 .hotel_description_wpap{
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   padding-left: 33px;
-  /*padding-right: 31px;*/
+
 }
 .hotel_image{
   display: block;
@@ -919,15 +1046,25 @@ background: rgba(255, 255, 255, 0.3);
 }
 .hotel_link:hover{
   color: #81b3d2;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 .hotel_link:active{
   color: rgba(0,0,0,.5);
 }
 .hotel_rating{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  -ms-flex-item-align: start;
   align-self: flex-start;
   padding-top: 4px;
   width: 110px;
@@ -975,7 +1112,7 @@ background: rgba(255, 255, 255, 0.3);
    line-height: 24px;
    color: #7d7d7d;
 }
-/*форма поиска гостиницы*/
+
 .searh_button{
    position: relative;
    display: block;
@@ -987,6 +1124,8 @@ background: rgba(255, 255, 255, 0.3);
    cursor: pointer;
 }
 .adults_button_minus::before{
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   width: 12px;
   height: 3px;
@@ -1010,8 +1149,14 @@ background: rgba(255, 255, 255, 0.3);
   background-color: #503E32;
 }
 .social_btn{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 46px;
   height: 50px;
@@ -1020,6 +1165,8 @@ background: rgba(255, 255, 255, 0.3);
 
 .social_btn:hover{
   background-color:#669ec0;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 .social_btn:focus,
@@ -1028,13 +1175,20 @@ background: rgba(255, 255, 255, 0.3);
   color: #88B7D2;
 }
 .page_footer_label{
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 700;
+  line-height:26px;
   color: #000000;
 }
 .footer_copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 33.33333%;
 }
@@ -1042,7 +1196,10 @@ background: rgba(255, 255, 255, 0.3);
   line-height: 26px;
 }
 .social_link{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
@@ -1060,6 +1217,8 @@ background: rgba(255, 255, 255, 0.3);
 }
 .copyright_logo:hover path{
  fill: #81b3d2;
+ -webkit-transition: all ease 0.5s;
+ -o-transition: all ease 0.5s;
  transition: all ease 0.5s;
 }
 .copyright_logo:active path{
@@ -1074,14 +1233,7 @@ background: rgba(255, 255, 255, 0.3);
 .modal_show{
   display: block;
 }
-/*.modal_map{
-  top:50%;
-  left: 50%;
-  width: 1200px;
-  height: 593px;
-  margin-left: -600px;
-  border: 1px solid white;
-}*/
+
 .modal_map iframe {
   position: relative;
   width: 100%;
@@ -1091,7 +1243,7 @@ background: rgba(255, 255, 255, 0.3);
 
   border: none;
 }
-/*кнопка закрытия карты*/
+
 .modal_close {
   position: absolute;
   top: 0;
@@ -1123,38 +1275,39 @@ background: rgba(255, 255, 255, 0.3);
 }
 
 .modal_close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .modal_close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/*.toggler__content{
-  display:none;
-}
-.toggler__content--on{
-  display:block;
-}*/
-/*@keyframes show {
+
+
+
+@-webkit-keyframes show {
   0% {
+    -webkit-transform: scaleY(0) translateY(-60%);
     transform: scaleY(0) translateY(-60%);
   }
 
   100% {
+    -webkit-transform: scaleY(1) translateY(0);
     transform: scaleY(1) translateY(0);
   }
-}*/
-/*.toggler__content--on{
-  display: block;
-  animation: show 0.75s forwards;
-}*/
+}
 
 @keyframes show {
   0% {
+    -webkit-transform: scaleY(0) translateY(-60%);
     transform: scaleY(0) translateY(-60%);
   }
 
   100% {
+    -webkit-transform: scaleY(1) translateY(0);
     transform: scaleY(1) translateY(0);
   }
 }
@@ -1163,5 +1316,6 @@ background: rgba(255, 255, 255, 0.3);
 }
 .js_form_show {
   display: block;
+  -webkit-animation: show 0.75s forwards;
   animation: show 0.75s forwards;
 }
