@@ -28,11 +28,4 @@ var close = popupMap.querySelector(".modal_close");
     popupMap.classList.remove("modal_show");
   });
 
-   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-  if (evt.keyCode === 27) {
-    if (popupMap.classList.contains("modal_show")) {
-        popupMap.classList.remove("modal_show");
-      }
-    }
-  });
+

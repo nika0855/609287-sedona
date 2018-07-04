@@ -14,7 +14,6 @@ body{
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
-
 }
 .wrapper{
   position: relative;
@@ -30,7 +29,7 @@ body{
   min-height: 432px;
   padding-top: 76px;
   background-color: #6e95bd;
-  background-image: url(../img/background-foto.jpg);
+  background-image: url("../img/background-foto.jpg");
   background-size: cover;
   background-position: 50% 21%;
 }
@@ -48,8 +47,6 @@ a{
   line-height: 21px;
   color:#696969;
 }
-
-
 .button{
   display: block;
   border: 0;
@@ -67,7 +64,7 @@ a{
   font-size: 14px;
   line-height: 21px;
 }
- .button_blue{
+.button_blue{
   background-color: #82b3d3;
 }
 .button_blue:hover{
@@ -80,8 +77,8 @@ a{
   background-color:#5496bd;
   color:#95B9D3;
 }
- .button_brown{
- background-color: #766357;
+.button_brown{
+  background-color: #766357;
 }
 .button_brown:hover{
   background-color:#604e43;
@@ -93,8 +90,6 @@ a{
   background-color:#503e33;
   color: #827773;
 }
-/*навигация*/
-
 .site_navigation{
   list-style: none;
 }
@@ -120,7 +115,6 @@ a{
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
-
 .information{
   display: block;
   margin: 0 auto;
@@ -142,18 +136,15 @@ a{
   font-size: 14px;
   color:#696969;
 }
-fieldset{
+.map_interactive fieldset{
   border:none;
 }
 .appointment_form{
-
   width: 568px;
   height: 396px;
   background-color: #f2f2f2;
-
 }
 .form_search{
-  /*display: none;*/
   position: absolute;
   padding: 56px;
   -webkit-box-sizing: border-box;
@@ -165,12 +156,12 @@ fieldset{
   z-index: 5;
 }
 .form_search_label{
-   display: block;
-   width: 112px;
- }
+  display: block;
+  width: 112px;
+}
 .form_label_child{
   width: 65px;
- }
+}
 .form_calend{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -180,7 +171,7 @@ fieldset{
   font-size: 14px;
   text-transform: uppercase;
   background-color: #f2f2f2;
- }
+}
 .searh_caledar{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,19 +187,19 @@ fieldset{
   height: 38px;
   background-color: #f2f2f2;
   cursor: pointer;
- }
+}
 .searh_caledar:hover path{
   fill: #000000;
   -webkit-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
- }
+}
 .searh_caledar:active path{
   fill: #81B2D0;
   -webkit-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
- }
+}
 .button_submit_search{
   margin-top: 24px;
   padding: 16px 10px;
@@ -221,15 +212,14 @@ fieldset{
   line-height: 26px;
   font-weight: 700;
   cursor: pointer;
- }
+}
 .button_submit_search:hover{
   background-color: #669EBF;
- }
+}
 .button_submit_search:active{
   background-color: #5596BE;
   color: rgba(255,255,255,.3);
- }
-
+}
 .appointment_form input[type="text"]:not(.big_child) {
   border: none;
   background-color: #f2f2f2;
@@ -328,7 +318,6 @@ fieldset{
   -ms-transform: translate(-50%, -50%) rotate(90deg);
   transform: translate(-50%, -50%) rotate(90deg);
 }
-
 .appointment_item input[type="text"]{
   font: inherit;
   background-color: #f2f2f2;
@@ -344,8 +333,8 @@ fieldset{
 }
 .appointment_item input[type="text"]:focus{
   background-color: #ffffff;
-  border-color: #e5e5e5;
-  color: #000000;
+  outline: 2px solid #e5e5e5;
+  outline-offset: -2px;
   cursor: pointer;
   -webkit-transition:all ease 0.5s;
   -o-transition:all ease 0.5s;
@@ -361,19 +350,17 @@ fieldset{
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-
 }
 .map_interactive{
   width: 1200px;
   height: 593px;
   z-index: 10;
 }
-/*стили формы*/
 .filter{
   padding: 27px 6% 6px;
   color: #ffffff;
   background-color: #6e95bb;
-  background-image: url(../img/hotel-background.jpg);
+  background-image: url("../img/hotel-background.jpg");
   background-position: 50% 16%;
   background-repeat: no-repeat;
 }
@@ -471,10 +458,9 @@ input[type="radio"].visually_hidden{
   width: 27px;
   background-image: url("../img/checkbox-on.svg");
 }
-
 .payment_day{
-   margin-left: auto;
-   width: 30%;
+  margin-left: auto;
+  width: 30%;
 }
 .cost_day{
   margin: 0;
@@ -516,7 +502,6 @@ input[type="radio"].visually_hidden{
   font-size: 14px;
   cursor: pointer;
 }
-
 .number_num input{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -535,13 +520,11 @@ input[type="radio"].visually_hidden{
 }
 .slider_range .slider_line_range{
   height: 2px;
-
-background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 .slider_range .line_slider{
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 .range_toggle{
@@ -583,7 +566,6 @@ background: rgba(255, 255, 255, 0.3);
 .slider_button_max{
   left: 80%;
 }
-/*//подвал*/
 .main_footer{
   color: #000000;
   background-color: #fdfdfd;
@@ -609,25 +591,19 @@ background: rgba(255, 255, 255, 0.3);
 .page_footer a{
   color:#000000;
 }
-
 .acdemy_logo{
   display: block;
   width: 113px;
   height: 39px;
-
 }
-
-
 .icon_dir::after{
   content: "";
   width: 11px;
   height: 10px;
-  background-image: url(../img/icon-up-dir.svg);
+  background-image: url("../img/icon-up-dir.svg");
   display: inline-block;
   color: #f2f2f2;
 }
-
-
 .logo{
   width: 138px;
   height: 70px;
@@ -652,7 +628,7 @@ background: rgba(255, 255, 255, 0.3);
   bottom: 0;
   width: 100%;
   height: 57px;
-  background-image: url(../img/triangle.png);
+  background-image: url("../img/triangle.png");
   background-repeat: no-repeat;
   background-size: 100% 57px;
 }
@@ -697,12 +673,10 @@ background: rgba(255, 255, 255, 0.3);
   -ms-flex-preferred-size: 20%;
   flex-basis: 20%;
 }
-
 .main_nav_link{
   line-height: 26px;
   color: #000000;
 }
-
 .main_nav_link:hover{
   color: #80b3d2;
   -webkit-transition: all ease 0.5s;
@@ -715,7 +689,6 @@ background: rgba(255, 255, 255, 0.3);
 .main_present_link{
   color: #776456;
 }
-
 .separate_wrapper{
   height: 330px;
 }
@@ -753,7 +726,6 @@ background: rgba(255, 255, 255, 0.3);
   color: #ffffff;
 }
 .characters_text{
-
   margin-top: 22px;
 }
 .title_elem{
@@ -776,9 +748,9 @@ background: rgba(255, 255, 255, 0.3);
   left: 0;
   max-width: 100%;
   height: auto;
--webkit-transform: translateY(-54%);
- -ms-transform: translateY(-54%);
- transform: translateY(-54%);
+  -webkit-transform: translateY(-54%);
+  -ms-transform: translateY(-54%);
+  transform: translateY(-54%);
 }
 .paragraph_text{
   width: 33.333333%;
@@ -818,7 +790,7 @@ background: rgba(255, 255, 255, 0.3);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-image: url(../img/icon-1.svg);
+  background-image: url("../img/icon-1.svg");
   background-size: 75px 76px;
 }
 .food_elem::before{
@@ -831,7 +803,7 @@ background: rgba(255, 255, 255, 0.3);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-image: url(../img/icon-3.svg);
+  background-image: url("../img/icon-3.svg");
 }
 .souvenirs_elem::before{
   content: "";
@@ -843,7 +815,7 @@ background: rgba(255, 255, 255, 0.3);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-image: url(../img/icon-2.svg);
+  background-image: url("../img/icon-2.svg");
   background-size: 64px 76px;
 }
 
@@ -875,7 +847,6 @@ background: rgba(255, 255, 255, 0.3);
   height: 256px;
   background-color: #eeeeee;
 }
-
 .choice_wrap{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,7 +942,6 @@ background: rgba(255, 255, 255, 0.3);
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-
 .icon_link:active path{
   fill: #82b3d3;
 }
@@ -984,7 +954,6 @@ background: rgba(255, 255, 255, 0.3);
 .icon_down_link:active path{
   fill: #82b3d3;
 }
-
 .hotel{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1020,7 +989,6 @@ background: rgba(255, 255, 255, 0.3);
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding-left: 33px;
-
 }
 .hotel_image{
   display: block;
@@ -1075,7 +1043,7 @@ background: rgba(255, 255, 255, 0.3);
 .hotel_stars{
   max-width: 110px;
   height: 17px;
-  background-image: url(../img/star.svg);
+  background-image: url("../img/star.svg");
   background-repeat: space;
 }
 .rating_text{
@@ -1099,29 +1067,28 @@ background: rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 .search_hotel_title{
-   display: block;
-   margin-top: 21px;
-   margin-bottom: 23px;
-   font-size: 30px;
-   font-weight: 700;
-   color: #000;
-   line-height: 36px;
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 23px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  line-height: 36px;
 }
 .search_hotel_text{
-   font-family: "PT Sans","Arial",sans-serif;
-   line-height: 24px;
-   color: #7d7d7d;
+  font-family: "PT Sans","Arial",sans-serif;
+  line-height: 24px;
+  color: #7d7d7d;
 }
-
 .searh_button{
-   position: relative;
-   display: block;
-   border: 0;
-   width: 38px;
-   height: 38px;
-   font: inherit;
-   background-color: #f2f2f2;
-   cursor: pointer;
+  position: relative;
+  display: block;
+  border: 0;
+  width: 38px;
+  height: 38px;
+  font: inherit;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 .adults_button_minus::before{
   -webkit-transform: translate(-50%,-50%);
@@ -1130,16 +1097,15 @@ background: rgba(255, 255, 255, 0.3);
   width: 12px;
   height: 3px;
 }
-
 .search_hotel_botton{
-   position: relative;
-   margin-top: 47px;
-   padding: 30px 10px;
-   width: 100%;
-   font-size: 21px;
-   line-height: 26px;
-   z-index: 2;
-   background-color:#766357;
+  position: relative;
+  margin-top: 47px;
+  padding: 30px 10px;
+  width: 100%;
+  font-size: 21px;
+  line-height: 26px;
+  z-index: 2;
+  background-color:#766357;
 }
 .search_hotel_botton:hover{
   background-color: #604E44;
@@ -1162,7 +1128,6 @@ background: rgba(255, 255, 255, 0.3);
   height: 50px;
   background-color: #81b3d2;
 }
-
 .social_btn:hover{
   background-color:#669ec0;
   -webkit-transition: all ease 0.5s;
@@ -1216,16 +1181,15 @@ background: rgba(255, 255, 255, 0.3);
   margin-left: 8px;
 }
 .copyright_logo:hover path{
- fill: #81b3d2;
- -webkit-transition: all ease 0.5s;
- -o-transition: all ease 0.5s;
- transition: all ease 0.5s;
+  fill: #81b3d2;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 .copyright_logo:active path{
   fill: #bcbcbc;
 }
 .map{
-  /*display: block;*/
   position: relative;
   height: 593px;
   overflow: hidden;
@@ -1233,79 +1197,60 @@ background: rgba(255, 255, 255, 0.3);
 .modal_show{
   display: block;
 }
-
 .modal_map iframe {
   position: relative;
   width: 100%;
   height: 100%;
   border: 0;
   z-index: 2;
-
   border: none;
 }
-
 .modal_close {
   position: absolute;
   top: 0;
   right: -34px;
-
   width: 22px;
   height: 22px;
-
   font-size: 0;
-
   background-color: #fff;
   border: 0;
-
   cursor: pointer;
 }
-
 .modal_close::before,
 .modal_close::after {
   content: "";
-
   position: absolute;
   top: 10px;
   left: 2px;
-
   width: 19px;
   height: 3px;
-
   background-color: #d0d0d0;
 }
-
 .modal_close::before {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 .modal_close::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
-
-
 @-webkit-keyframes show {
   0% {
     -webkit-transform: scaleY(0) translateY(-60%);
     transform: scaleY(0) translateY(-60%);
   }
-
   100% {
     -webkit-transform: scaleY(1) translateY(0);
     transform: scaleY(1) translateY(0);
   }
 }
-
 @keyframes show {
   0% {
     -webkit-transform: scaleY(0) translateY(-60%);
     transform: scaleY(0) translateY(-60%);
   }
-
   100% {
     -webkit-transform: scaleY(1) translateY(0);
     transform: scaleY(1) translateY(0);

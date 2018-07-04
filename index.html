@@ -4,9 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 <body>
   <div class="wrapper">
@@ -30,11 +29,9 @@
         </ul>
       </nav>
     </header>
-
     <main class="container">
       <div class="page_main_intro">
         <img class="page_main_logo" src="img/welcome-sedona.png" width="458" height="352" alt="добро пожалувать в Седону"></div>
-
       <div class="information">
         <h1 class="visually-hidden">Отели в городе Седона</h1> <b class="information_item">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
         <p class="information_text">
@@ -52,7 +49,6 @@
             <div class="image_wrap">
               <img class="city" src="img/city2.jpg" width="800" height="400" alt="городок Седона"></div>
           </div>
-
           <div class="separate_wrap separate_wrapper">
             <div class="housing_elem paragraph_text">
               <h3 class="title_elem">жильё</h3>
@@ -67,11 +63,9 @@
               <p class="characters souvenirs_elem_text">Не только китайского, но и местного производства!</p>
             </div>
           </div>
-
           <div class="separate_wrap bridge_wrapper">
             <div class="image_wrap">
               <img class="city" src="img/bridge2.jpg" width="800" height="400" alt="мост дьявола"></div>
-
             <div class="bridge_elem">
               <h3 class="heading_elem">
                 там есть
@@ -80,7 +74,6 @@
               <p class="characters_text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
-
           <div class="separate_wrap bridge_wrapper">
             <div class="fragment_descriptions">
               <h3 class="heading_elem">небольшая площадь</h3>
@@ -106,7 +99,6 @@
           Укажите предполагаемые даты поездки,
           <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button search_hotel_botton <!-- toggler__button -->" type="button" id="bnt_search">поиск гостиницы в седоне</button>
-
         <form class="appointment_form form_search  <!-- button_close toggler__content -->
           " action="https://echo.htmlacademy.ru" method="post">
           <div class="appointment_item">
@@ -147,33 +139,24 @@
               <button class="searh_button adults_button_plus" type="button" aria-label="уменьшить"></button>
             </div>
           </div>
-
           <button type="submit" class="button_submit_search">Найти</button>
-
         </form>
-
       </section>
       <section class="map modal_map">
         <h2 class="visually_hidden">Мы на большой карте</h2>
-
-       <div class="map_interactive" style="overflow: hidden;">
+       <div class="map_interactive">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997641.0721878601!2d-112.39646853021871!3d34.780696503165004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530420291716"  allowfullscreen></iframe>
        </div>
-
         <img class="map_image" src="img/big_map.png"
          width="1200" height="593"  alt="карта">
         <button class="modal_close" type="button">Закрыть</button>
       </section>
-
     </main>
-
     <footer class="footer_index">
       <div class="page_footer">
-
         <div class="footer_copyright">
           <a class="page_footer_label" href="#">#visitsedona</a>
         </div>
-
         <div class=" footer_copyright">
           <ul class="social_link">
             <li class="social_link_item">
@@ -184,7 +167,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="social_link_item">
               <a class="social_btn" href="https://facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
@@ -193,7 +175,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="social_link_item">
               <a class="social_btn" href="https://instagram.com/htmlacademy">
                 <span class="visually-hidden">ютуб</span>
@@ -202,7 +183,6 @@
                 </svg>
               </a>
             </li>
-
           </ul>
         </div>
         <div class="footer_copyright">
@@ -216,7 +196,6 @@
         </div>
       </div>
     </footer>
-
 </div>
        <script src="js/main.min.js" defer></script>
 </body>
