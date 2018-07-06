@@ -458,6 +458,13 @@ input[type="radio"].visually_hidden{
   width: 27px;
   background-image: url("../img/checkbox-on.svg");
 }
+.filter_checkbox:disabled + label::before{
+  background-image: url(../img/checkbox-off-disabled.svg);
+}
+.filter_checkbox[type="checkbox"]:checked:disabled + label::before {
+  color: #6a6a6a;
+  background-image:url(../img/checkbox-on-disabled.svg);
+}
 .payment_day{
   margin-left: auto;
   width: 30%;
@@ -690,10 +697,10 @@ input[type="radio"].visually_hidden{
   color: #776456;
 }
 .separate_wrapper{
-  height: 330px;
+  min-height: 330px;
 }
 .bridge_wrapper{
-  height: 256px;
+  min-height: 256px;
 }
 .separate_wrap{
   display: -webkit-box;
@@ -837,14 +844,14 @@ input[type="radio"].visually_hidden{
 }
 .road_elem{
   width: 33.333333%;
-  height: 256px;
+  min-height: 256px;
   background-color: #eeeeee;
 }
 .tourists_elem{
   -webkit-box-flex:1;
   -ms-flex:1 1 400px;
   flex:1 1 400px;
-  height: 256px;
+  min-height: 256px;
   background-color: #eeeeee;
 }
 .choice_wrap{
@@ -1090,12 +1097,13 @@ input[type="radio"].visually_hidden{
   background-color: #f2f2f2;
   cursor: pointer;
 }
-.adults_button_minus::before{
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  width: 12px;
-  height: 3px;
+.adults_button_minus:active::before,
+.adults_button_minus:active::after{
+ background-color:#81b3d2;
+}
+.adults_button_plus:active::before,
+.adults_button_plus:active::after{
+ background-color:#81b3d2;
 }
 .search_hotel_botton{
   position: relative;
@@ -1128,16 +1136,18 @@ input[type="radio"].visually_hidden{
   height: 50px;
   background-color: #81b3d2;
 }
-.social_btn:hover{
+.social_btn_blue:hover{
   background-color:#669ec0;
   -webkit-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-.social_btn:focus,
-.social_btn:active{
-  background-color:#5496bd;
+.social_btn_blue:focus{
   color: #88B7D2;
+  background-color:#5496bd;
+}
+.social_btn_blue:active path{
+  fill: #88b7d2
 }
 .page_footer_label{
   font-size: 21px;
